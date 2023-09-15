@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.sticky-header {
+  background-image: url('/matrix.gif'); /* Replace '--' with your GIF file's path */
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust this property based on your design */
+  background-attachment: fixed; /* Optional: To make the background fixed */
+  opacity: 1; /* Adjust the opacity value as needed (0.0 to 1.0) */
+  /* Add other navbar styles, like height, padding, etc. */
+}
+
+body {
+     margin: 0px auto;
+    padding: 0px 0px;
+    }
+
+  main {
+    font-family: 'Abel', sans-serif;
+    margin: 10px auto;
+    padding: 0px 10px;
+  }
+
+    .sticky-header {
+      font-family: 'Abel', sans-serif;
+      background-color: black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      animation: wiggle 2s infinite ease-in-out;
+    }
+
+
+    .menu-btn {
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.4s;
+    }
+
+    .menu-btn:hover {
+      transform: rotate(180deg) scale(1.2);
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: black;
+      top: 64px;
+      right: 10px;
+      width: 220px;
+      z-index: 1;
+      border-radius: 3px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+
+    .menu.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu ul li {
+      padding: 10px;
+      border-bottom: 1px solid #FF6E40;
+    }
+
+    .menu ul li:last-child {
+      border-bottom: none;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    .menu ul li a:hover {
+      background-color: #00004b;
+    }
+
+    @keyframes wiggle {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px);
+      }
+      50% {
+        transform: translateX(5px);
+      }
+      75% {
+        transform: translateX(-5px);
+      }
+    }
+
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: silver;
+}
+img {
+  width: 370px;
+}

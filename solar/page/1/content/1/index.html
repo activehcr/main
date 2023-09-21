@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Direct Solar Power: Off-Grid Without Batteries | LOW←TECH MAGAZINE</title>
+<meta content="This is a solar-powered website, which means it sometimes goes offline" name="description"/>
+<meta content="Kris De Decker" name="author"/>
+<link href="https://solar.lowtechmagazine.com/icons/sun.svg" rel="icon"/>
+<link href="https://solar.lowtechmagazine.com/css/style.css" rel="stylesheet"/><meta content="Direct Solar Power: Off-Grid Without Batteries" property="og:title">
+<meta content="Direct Solar Power: Off-Grid Without Batteries" name="twitter:title">
+<meta content="Using solar panels without backup infrastructure makes renewable energy production much more affordable, efficient and sustainable." property="og:description">
+<meta content="Using solar panels without backup infrastructure makes renewable energy production much more affordable, efficient and sustainable." name="twitter:description">
+<meta content="article" property="og:type">
+<meta content="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/" property="og:url"/>
+<meta content="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-office_dithered.png" itemprop="image" property="og:image"/>
+<meta content="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-office_dithered.png" property="og:image:secure_url"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="summary_large_image" name="twitter:card">
+<meta content="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-office_dithered.png" name="twitter:image"/>
+<meta content="posts" property="article:section"/>
+<meta content="2023-08-25T00:00:00+00:00" property="article:published_time"/>
+<meta content="2023-08-25T00:00:00+00:00" property="article:modified_time"/><meta content="LOW←TECH MAGAZINE" property="og:site_name"/>
+<meta content="Kris De Decker" property="article:author"/>
+<meta content="Kris De Decker" name="citation_author"/>
+<meta content="Solar Power" property="article:tag">
+<meta content="Energy Storage" property="article:tag"/>
+<meta content="Off-The-Grid" property="article:tag"/>
+<meta content="Cooking and Food Preservation" property="article:tag"/>
+<meta content="DIY" property="article:tag"/>
+<meta content="Industry and Manufacturing" property="article:tag"/>
+</meta></meta></meta></meta></meta></meta></meta></head>
+<body id="direct-solar-power-off-grid-without-batteries">
+<div class="battery_bg">
+<div class="bat_status" data-charging="no" id="battery_data">
+<a href="https://solar.lowtechmagazine.com/power/" title="Power">
+<span id="charge_icon">
+<svg class="icon battery-svg" viewbox="0 0 500 500"><title>Battery used</title><polygon class="svg_stroke" points="327.01 127.16 327.01 47.31 172.99 47.31 172.99 127.16 115.52 127.16 115.52 452.69 384.48 452.69 384.48 127.16 327.01 127.16"></polygon><polygon class="svg_fill" points="357.64 408.86 158.26 408.86 158.26 209.49 357.64 408.86"></polygon></svg>
+<svg class="icon sun-svg" viewbox="0 0 500 500"><title>Battery charging</title><circle class="svg_fill" cx="248.48" cy="252.55" r="97.03"></circle><rect class="svg_fill" height="112.39" width="27.9" x="234.53" y="17.45"></rect><rect class="svg_fill" height="112.39" width="27.9" x="234.53" y="375.25"></rect><rect class="svg_fill" height="112.39" transform="translate(679.92 -174.83) rotate(90)" width="27.9" x="413.42" y="196.35"></rect><rect class="svg_fill" height="112.39" transform="translate(322.12 182.97) rotate(90)" width="27.9" x="55.63" y="196.35"></rect><rect class="svg_fill" height="112.39" transform="translate(198.96 -228.23) rotate(45)" width="27.9" x="361.03" y="69.85"></rect><rect class="svg_fill" height="112.39" transform="translate(303.75 24.77) rotate(45)" width="27.9" x="108.03" y="322.85"></rect><rect class="svg_fill" height="112.39" transform="translate(908.15 381.93) rotate(135)" width="27.9" x="361.03" y="322.85"></rect><rect class="svg_fill" height="112.39" transform="translate(297.35 128.93) rotate(135)" width="27.9" x="108.03" y="69.85"></rect></svg>
+</span>
+<span id="level"></span></a>
+</div>
+<div id="battery">
+</div>
+</div>
+<header class="site-header">
+<h1><a href="https://solar.lowtechmagazine.com/" id="top">LOW←TECH MAGAZINE</a></h1>
+<div class="subtitle">
+<a href="https://solar.lowtechmagazine.com/power">This is a solar-powered website, which means it sometimes goes offline      
+    </a>
+</div>
+<nav id="menu">
+<div id="menu-s">
+<div id="lang-menu" title="languages">
+<svg class="icon" id="globe" viewbox="0 0 19.97 19.97" xmlns="http://www.w3.org/2000/svg"><circle class="stroke" cx="9.99" cy="9.99" r="9.24"></circle><ellipse class="stroke" cx="9.99" cy="9.99" rx="4.63" ry="9.24"></ellipse><line class="stroke" x1="9.99" x2="9.99" y1="0.75" y2="19.22"></line><line class="stroke" x1="18.39" x2="1.58" y1="12.99" y2="12.99"></line><line class="stroke" x1="18.39" x2="1.58" y1="6.99" y2="6.99"></line></svg>
+</div>
+<nav id="languages">
+<ul>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/">English</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/fr/">Français</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/de/">Deutsch</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/nl/">Nederlands</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/es/">Español</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/it/">Italiano</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/pt/">Português</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/pl/">Polski</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/ar/">العربية</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/vn/">Tiếng Việt</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/ko/">한국어</a>
+</li>
+</ul>
+</nav>
+<span id="m-btn">menu</span>
+</div>
+<ul id="menu-list">
+<li class="">
+<a data-nav="about" href=" /about/ ">
+<span>About</span>
+</a>
+</li>
+<li class="">
+<a data-nav="low-tech-solutions" href=" /low-tech-solutions/ ">
+<span>Low-tech Solutions</span>
+</a>
+</li>
+<li class="">
+<a data-nav="high-tech-problems" href=" /high-tech-problems/ ">
+<span>High-tech Problems</span>
+</a>
+</li>
+<li class="">
+<a data-nav="obsolete-technology" href=" /obsolete-technology/ ">
+<span>Obsolete Technology</span>
+</a>
+</li>
+<li class="">
+<a data-nav="offline-reading" href=" /offline-reading/ ">
+<span>Offline Reading</span>
+</a>
+</li>
+<li class="">
+<a data-nav="archive" href=" /archives/ ">
+<span>Archive</span>
+</a>
+</li>
+<li class="">
+<a data-nav="donate" href=" /donate/ ">
+<span>Donate</span>
+</a>
+</li>
+<li class="">
+<a data-nav="ntm" href=" https://www.notechmagazine.com/ " target="_blank">
+<span>NTM</span>
+</a>
+</li>
+<li class="rss">
+<a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Newsletter</title><path d="M4.95,13.14v55H74.33v-55Zm54.34,8.12L39.64,39.74,20,21.26ZM13.07,60V25.91l26.56,25,26.57-25V60Z"></path></svg></a>
+<a href="/feeds" rel="alternate" target="_blank" type="application/atom+xml"><svg class="icon" viewbox="0 0 80 80"><title>RSS Feed</title><circle cx="19.91" cy="58.23" r="6.86"></circle><path d="M67.89,65.72H55.7A41.86,41.86,0,0,0,13.89,23.91V11.73A54.06,54.06,0,0,1,67.89,65.72Z"></path><path d="M48.93,65.72H36.75A22.88,22.88,0,0,0,13.89,42.87V30.68A35.08,35.08,0,0,1,48.93,65.72Z"></path></svg></a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="article low-tech-solutions">
+<article>
+<section class="article" id="content">
+<header class="entry-header">
+<h1 class="entry-title">
+				Direct Solar Power: Off-Grid Without Batteries</h1>
+<p class="summary">
+					Using solar panels without backup infrastructure makes renewable energy production much more affordable, efficient and sustainable.
+				</p>
+<div class="metadata">
+<div><time class="published">August 25, 2023</time> </div>
+<div class="authors">
+<span class="byline">Written by</span>
+<span class="author"><a href="https://solar.lowtechmagazine.com/authors/kris-de-decker/">Kris De Decker</a></span>
+</div>
+<div class="translations">
+<span class="byline">Translations</span>
+<a href="https://solar.lowtechmagazine.com/nl/2023/08/direct-solar-power-off-grid-without-batteries/">nl</a>
+</div>
+</div>
+</header>
+<div class="entry-content"><div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: a laptop running on direct solar power. Photo: Marie Verdeil." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-office_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/direct-solar-office_hu58e7c655d5b64006240b85a4dea52036_1309201_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-office_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: a laptop running on direct solar power. Photo: Marie Verdeil. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>Conventional solar installations do not question our dependence on fossil fuels and the energy-guzzling lifestyle that results. Both rooftop solar panels and large-scale solar farms provide us with all the power we want, even when the sun is not shining. That is because these systems use the central power grid, which largely runs on fossil fuels, as a kind of battery to cope with power shortages.</p>
+<p>Although grid-connected solar panels can reduce the fossil fuel consumption of thermal power plants, these savings are at least partly offset by the additional fossil fuels required to build and maintain what is essentially a <a href="https://solar.lowtechmagazine.com/2017/09/how-not-to-run-a-modern-society-on-solar-and-wind-power-alone/" target="_blank">dual energy infrastructure</a>. Combining solar and wind power can further increase the share of renewable energy in the power grid, but this requires further infrastructure development. Apart from energy, this also demands a lot of money and time.</p>
+<p>Replacing fossil-fuel-fired power plants with energy storage, so that surplus electricity generated on sunny days can be stored for when there is no or insufficient sun, encounters the same problem. Energy storage, whether integrated into a power grid or located at individual households (off-grid systems), is very expensive and <a href="https://solar.lowtechmagazine.com/2015/05/how-sustainable-is-stored-sunlight/" target="_blank">carbon-intensive to build and maintain</a>.</p>
+<h2 id="autonomous-solar-installation">Autonomous solar installation</h2>
+<p>The production of solar panels obviously <a href="https://solar.lowtechmagazine.com/2015/04/how-sustainable-is-pv-solar-power/" target="_blank">costs money and energy</a>. However, the financial and energy costs of the associated back-up infrastructure are many times higher. For grid-connected solar installations, these costs are very difficult to calculate precisely, but for autonomous solar installations (without grid connection and with their own energy storage) it is a lot easier. As an example, I will therefore take the small autonomous solar installation that powers my living room in Barcelona.</p>
+<p>This system consists of two 50W solar panels on the balcony, a 100 Ah lead-acid battery and a 10A charge controller. The energy generated is used for lighting, the music system, and charging laptops and other electronic devices, among other things. The initial financial investment was 340 euros: 120 euros for the solar panels, 170 euros for the battery and 50 euros for the charge controller.</p>
+<p>But while the solar panels should last 30 years and the charge controller about 10 years, I have to replace the lead battery on average every three to five years. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" role="doc-noteref">1</a></sup> Over a 30-year lifespan, the costs then amount to €120 for the solar panels, €150 for the charge controllers and – in the best case scenario – €1,020 for the batteries. The batteries (and associated charge controllers) therefore account for about 90% of the total lifetime costs.</p>
+<p>Energy storage also dominates the plant’s “embedded” energy (and resulting carbon emissions). Producing my lead-acid battery took 1,200 megajoules (MJ) of energy. <sup id="fnref:2"><a class="footnote-ref" href="#fn:2" role="doc-noteref">2</a></sup> Over a 30-year lifetime (six batteries at best), that equates to 7,200 MJ. The three charge controllers add another 360 MJ over a 30-year lifetime, bringing the total energy consumption for the battery system to 7,560 MJ. <sup id="fnref:3"><a class="footnote-ref" href="#fn:3" role="doc-noteref">3</a></sup> In contrast, the production of the solar panels costs only 2,275 MJ out of a total of 9,835 MJ. <sup id="fnref:4"><a class="footnote-ref" href="#fn:4" role="doc-noteref">4</a></sup> Conclusion: more than 75% of total fossil energy consumption is due to energy storage.</p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: To the right on the balcony are the two 50W solar panels that power my flat&amp;rsquo;s living room. Next to it is the 30W solar panel that makes this website work. Photo: Marie Verdeil." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/balcony-system-from-outside_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/balcony-system-from-outside_hu8745a9537d643fb58adeb653214f8cd0_726613_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/balcony-system-from-outside_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: To the right on the balcony are the two 50W solar panels that power my flat’s living room. Next to it is the 30W solar panel that makes this website work. Photo: Marie Verdeil. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: The structure for the solar panels, built from waste wood. Photo: Kris De Decker." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/structure-for-solar-panels-balcony_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/structure-for-solar-panels-balcony_hudb2b4d607d5e18274fbf8b93aa429126_1258710_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/structure-for-solar-panels-balcony_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: The structure for the solar panels, built from waste wood. Photo: Kris De Decker. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: The 100 Ah lead-acid battery powering the living room after sunset. Photo: Kris De Decker." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/100ah-battery_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/100ah-battery_huda825f0e920461c4e24f4dc52ea7ce35_648700_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/100ah-battery_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: The 100 Ah lead-acid battery powering the living room after sunset. Photo: Kris De Decker. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>Other types of batteries would not significantly change this conclusion. For a comparable off-grid system with lithium-ion batteries, energy storage would account for about 95% of the total lifetime cost (which is almost double that of a system with lead-acid batteries). Assuming an optimistic lifetime (10 years) and including charge controllers, lithium energy storage accounts for some 70% of the energy invested in a solar grid system. <sup id="fnref:5"><a class="footnote-ref" href="#fn:5" role="doc-noteref">5</a></sup> <sup id="fnref:6"><a class="footnote-ref" href="#fn:6" role="doc-noteref">6</a></sup> For nickel-iron batteries, energy storage would account for 85% of the total lifetime cost (there are no energy cost data). <sup id="fnref:7"><a class="footnote-ref" href="#fn:7" role="doc-noteref">7</a></sup></p>
+<p>The scale and location of the solar installation also make no difference. A larger system needs more solar panels, but also larger batteries and more expensive and powerful charge controllers. The ratios remain the same. <sup id="fnref:8"><a class="footnote-ref" href="#fn:8" role="doc-noteref">8</a></sup> The only factor that may give the solar panels a slightly larger share of the total cost is the structures on which they are mounted. I don’t take this into account because I built them myself from waste wood. However, if the solar panels are mounted on a roof, a DIY solution is less obvious. But even in that case, the cost of energy storage remains by far the biggest consideration.</p>
+<h2 id="direct-solar-energy-much-cheaper-and-more-sustainable">Direct solar energy: much cheaper and more sustainable</h2>
+<p>Unlike fossil fuels, the sun and wind are not available on demand. The problem with our approach to renewable energy is that we <a href="https://solar.lowtechmagazine.com/2018/12/keeping-some-of-the-lights-on-redefining-energy-security/" target="_blank">insist that power should always be infinitely available</a>, regardless of the weather, seasons or time of day. Matching energy demand to supply – <a href="https://solar.lowtechmagazine.com/2017/09/how-to-run-the-economy-on-the-weather/" target="_blank">as was done in the past</a> – would lead to dramatic reductions in the cost and use of fossil fuels.</p>
+<p>For example, if I omitted the battery storage of my solar installation, my system would become about 10 times cheaper: 120 euros instead of 1,290 euros over a 30-year lifetime. Alternatively, I could spend 1,290 euros on solar panels alone, which would give me a solar system of 1,075 watts. That’s ten times the capacity of the setup with batteries, more than what would fit on the balcony.</p>
+<p>Without the battery and charge controller, the energy cost of the installation also drops from 9,835 MJ to 2,275 MJ. In other words, I could generate at least four times as much solar energy with the same investment in fossil fuels.</p>
+<h2 id="how-can-direct-solar-power-be-practical">How can direct solar power be practical?</h2>
+<p>All well and good, but the sun does not shine after sunset and the amount of solar energy varies throughout the day and year. So how then can using solar panels without batteries (or other back-up infrastructure in the case of grid-connected installations) be practical?</p>
+<p>To answer that question, we look at a pioneer of “direct solar power”: the <em>Living Energy Farm</em>. This environmental education community in the US state of Virginia is completely “off-the-grid” thanks to solar power, but only 10% of the solar power generated passes through a (nickel-iron) battery. However, the solar panels provide power for several homes, a communal kitchen, a metal workshop, and a farm. <sup id="fnref:9"><a class="footnote-ref" href="#fn:9" role="doc-noteref">9</a></sup> <sup id="fnref:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup></p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: direct solar power at the Living Energy Farm." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/living-energy-farm-map_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/living-energy-farm-map_hue72e555041dafdd7fb33aff228468ae9_346896_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/living-energy-farm-map_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: direct solar power at the Living Energy Farm. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>The solar installation has been in operation since 2011 and consists of separate systems with a total peak power of 1,400 watts. <sup id="fnref:11"><a class="footnote-ref" href="#fn:11" role="doc-noteref">11</a></sup> In comparison, the average peak power of a residential solar installation in the UK and the US – for one household – is 4,000 watts and 6,500 watts, respectively. As in my flat, the Living Energy Farm uses energy sparingly, but the fact that hardly any batteries are used has other reasons.</p>
+<h2 id="some-appliances-are-only-used-during-the-day">Some appliances are only used during the day</h2>
+<p>A first reason is obvious: some electrical appliances and machines are only used during the day. This is true, for example, of all machines in the metal workshop, including a band saw, compressor, grinder, circular saw, lathe, milling machine and drilling machine. It also applies to agricultural machinery such as a grain mill and a deep well pump. Linked directly to solar panels, these machines offer all the capabilities of modern grid-powered technology, with the exception that they can only be used during the day. <sup id="fnref1:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup></p>
+<p>On a much smaller scale, I have used direct solar power for a soldering iron, glue gun and irrigation pump (for the balcony) at home. Other examples of appliances and machines that could be used only during the day include hoovers, sewing machines, washing machines, game consoles, laser cutters and 3D printers. It is not so difficult to imagine a modern society where activities such as vacuuming and DIY chores only take place during the day. It is certainly not a return to the Middle Ages.</p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: several workshop tools at the Living Energy Farm, most of them run on direct solar power. Image: Alexis Zeigler." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/shop-tools-living-energy-farm_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/shop-tools-living-energy-farm_hu8fba2bb78f2c1abae29a70cbef19fd97_3177870_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/shop-tools-living-energy-farm_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: several workshop tools at the Living Energy Farm, most of them run on direct solar power. Image: Alexis Zeigler. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: Metal lathe running on direct solar power, Living Energy Farm. Image: Alexis Zeigler." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/metal-lathe-living-energy-farm_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/metal-lathe-living-energy-farm_hu88acfb1a04ca6a0c69c132496a25563c_3067922_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/metal-lathe-living-energy-farm_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: Metal lathe running on direct solar power, Living Energy Farm. Image: Alexis Zeigler. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: Soldering with direct solar power. Photo: Marie Verdeil. Watch the video." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-soldering-2_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/direct-soldering-2_hub85911c0e64b235ac19bfc4047a4c6c1_1173371_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-soldering-2_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: Soldering with direct solar power. Photo: Marie Verdeil. <a href="https://www.youtube.com/watch?v=qozZCJU4IOc" target="_blank">Watch the video</a>. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>Moreover, not all electrical appliances require constant attention. Washing machines or dishwashers that trigger automatically when the sun shines are often cited example applications of a “smart” power grid. But that approach relies on an extensive infrastructure of electricity transmission, communication networks, and electronics-packed appliances.</p>
+<p>In contrast, in a decentralised direct solar approach, the intelligence is provided by the sun and the rotation of the planet. A direct solar-powered washing machine or dishwasher can be fully charged and switched on in the evening. The machine then starts up “automatically” in the morning. You can even use timers (electronic or mechanical) to run different appliances one after the other.</p>
+<p>Whether clouds pose an additional limit to a direct solar installation, and to what extent, depends on the size of the solar panels. Doubling the area of solar panels guarantees sufficient solar power during moderate cloud cover, while the installation remains much cheaper and more sustainable than a system with batteries or other backup infrastructure.</p>
+<p>An even larger area of solar panels could provide sufficient energy even during heavy cloud cover, but increasing the size of the system tenfold brings the cost back to the level of an autonomous system with batteries. Quadrupling the area makes the system equally dependent on fossil fuels again.</p>
+<h2 id="many-appliances-already-have-batteries">Many appliances already have batteries</h2>
+<p>Direct solar power does not rule out the use of electrical appliances after sunset either. As mentioned, the Living Energy Farm has a modest battery system, providing power for lights, fans, and electronic devices after sunset, among other things.  <sup id="fnref2:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup> In addition, many modern appliances already have built-in energy storage. This is the case for all kinds of electric vehicles, for most electronic gadgets, and for older electrical appliances with AA batteries.</p>
+<p>Consequently, these types of devices can be charged with direct solar energy during the day and then used for several hours after sunset thanks to the built-in battery. Combined with a lithium-ion power bank, a direct solar panel can also make it possible to charge USB devices after sunset. This strategy can even work for lighting, as there are many battery-powered lamps that you can use as modern torches, hung in different parts of rooms and buildings.</p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: A mobile phone on direct solar power. Photo: Marie Verdeil." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/solar-phone-2_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/solar-phone-2_hu55951911e8e55fbf8a14b541f45fffa4_1417585_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/solar-phone-2_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: A mobile phone on direct solar power. Photo: Marie Verdeil. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>Of course, outsourcing chemical energy storage to the device is not the most sustainable option. The production of lithium-ion batteries requires fossil fuels, and (unlike lead-acid batteries) they are not recycled. The best solution, of course, is to reduce the use of electrical devices. But charging them with direct solar energy is a lot more sustainable and efficient than via other batteries or a fossil-fueled electricity grid. If we use high-tech devices, then preferably in the smartest way possible.</p>
+<h2 id="non-electric-energy-storage">Non-electric energy storage</h2>
+<p>A third reason why direct solar power is more practical than it initially seems is that some electrical appliances can be used after sunset thanks to thermal energy storage. This is much cheaper and more sustainable than electrical energy storage. Thermal energy storage is already fairly well established for space and water heating systems, which store solar-heated water in an insulated boiler or (for space heating only) in the building envelope. It is no surprise that the Living Energy Farm has such systems, and solar thermal energy also provides hot water in my flat.</p>
+<p>However, the same approach also works for two important household appliances that need to work after sunset and also consume a lot of electricity: the fridge and the cooker. Instead of storing electricity from a solar panel in a battery to then power a fridge or cooker after sunset, these appliances on the Living Energy Farm use thermal insulation. This keeps the heat inside (in the case of the cooker) or outside (in the case of the fridge) when there is no power supply. The thermal insulation also ensures very high energy efficiency, which means that each of these appliances can already operate on a solar panel of just 100-200 watts.</p>
+<h2 id="a-direct-solar-powered-fridge">A direct solar-powered fridge</h2>
+<p>It is perfectly possible to connect a conventional fridge or freezer directly to a solar panel, but such an appliance would heat up very quickly at night. Even refrigerators with the most energy-efficient labels have a relatively limited insulation thickness (usually 2.5 cm). However, if that insulation thickness is increased to about 12.5 cm, the energy consumption of a refrigerator drops by a factor of four. <sup id="fnref:12"><a class="footnote-ref" href="#fn:12" role="doc-noteref">12</a></sup> <sup id="fnref:13"><a class="footnote-ref" href="#fn:13" role="doc-noteref">13</a></sup> The passive cooling capacity of a refrigerator can be further increased by adding thermal mass in the form of a water tank inside the appliance. During the day, the solar panel cools the water or converts it to ice. At night, this cold water or ice slows down the heating of the refrigerator. <sup id="fnref:14"><a class="footnote-ref" href="#fn:14" role="doc-noteref">14</a></sup></p>
+<p>A direct solar-powered fridge also opens at the top, not at the front. Cold air is heavy, and so much less energy is lost that way when someone opens the door. All these design choices add up to spectacular energy efficiency. A study of direct solar refrigerators in very sunny regions (Texas and New Mexico, USA) showed that they maintained their cooling capacity for 6 or 7 days without power supply. The units operated year-round with solar panels of only 80W to 120W. <sup id="fnref:15"><a class="footnote-ref" href="#fn:15" role="doc-noteref">15</a></sup> The Living Energy Farm powers its solar refrigerator with a 200W panel. <sup id="fnref3:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup></p>
+<div class="article-img vertical">
+<figure data-imgstate="dither">
+<img alt="Image: The Sundanzer DDR165. A refrigerator designed specifically for direct solar power. Photo: Sundanzer." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/sundanzer-direct-solar-fridge_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/sundanzer-direct-solar-fridge_hu84985c87aeb17e15779bbdf083c9ef92_152557_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/sundanzer-direct-solar-fridge_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: The Sundanzer DDR165. A refrigerator designed specifically for direct solar power. Photo: Sundanzer. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>Unlike solar heating, solar cooling is optimally tuned to seasonal variations in solar radiation. Cooling requires more energy in summer, when there is more solar energy. The aforementioned refrigerator in New Mexico recorded electricity consumption of 406 watt-hours per day in summer and only 230 watt-hours in winter. <sup id="fnref:16"><a class="footnote-ref" href="#fn:16" role="doc-noteref">16</a></sup> Moreover, the technology can be used throughout the cold chain, of which the household refrigerator is only a small (but essential) part. Another application is air cooling, although this is less well researched and more challenging. <sup id="fnref:17"><a class="footnote-ref" href="#fn:17" role="doc-noteref">17</a></sup></p>
+<h2 id="a-direct-solar-electric-cooker">A direct solar electric cooker</h2>
+<p>In principle, a conventional cooker can also be connected directly to a solar panel, but as with a conventional fridge, it is not very practical. You can only cook during the day, and you have to install a lot of solar panels. A single hot plate needs 1,000 watts of electrical power. A solar electric cooker solves these problems by packing the cooktop with thermal insulation. The technology is basically a combination of an electric cooktop and a <a href="https://solar.lowtechmagazine.com/2014/07/if-we-insulate-our-houses-why-not-our-cooking-pots/" target="_blank">haybox</a>.</p>
+<div class="article-img vertical">
+<figure data-imgstate="dither">
+<img alt="Image: Test of an electric solar cooker. Photo: California Polytechnic State University (Cal Poly)." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/test-isec-thermal-energy-storage_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/test-isec-thermal-energy-storage_hu8817f65f68e5f8cde11c2170fd616a01_1230447_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/test-isec-thermal-energy-storage_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: Test of an electric solar cooker. Photo: California Polytechnic State University (Cal Poly). <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>Thanks to thermal insulation, an electric solar cooker slowly accumulates heat during the day, which can then be used for cooking after sunset. In this way, a much lower power supply can be sufficient to achieve high temperatures. Think of it as “charging” your cooker, not with electricity but with heat.</p>
+<p>Researchers at US California Polytechnic State University (Cal Poly) built the first solar electric cooker in 2015. Their 12-volt device, which has since been further developed, needs only a 100W solar panel to work. It boils a litre of water in an hour. With a full day of sunlight, it can cook almost 5 kg of beans, rice, stew or potatoes. <sup id="fnref:18"><a class="footnote-ref" href="#fn:18" role="doc-noteref">18</a></sup></p>
+<p>Cooking after sunset is possible by using a cooking pot with a much thicker bottom (5-10 kg). Cal Poly’s research team managed to bring the temperature of that solid heat storage to 250°C in five hours with a 100W solar panel. They were then able to boil a litre of water in three seconds after sunset. In another test, they stir-fried 1 kg of vegetables in two minutes. The ideal configuration consists of two cooking pots: one with and one without heat storage. Thus, an electric solar cooker can cook both slowly and quickly, depending on the time of day and the dish. <sup id="fnref:19"><a class="footnote-ref" href="#fn:19" role="doc-noteref">19</a></sup></p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: The principle of a solar electric cooker with solid heat storage. Drawing: California Polytechnic State University (Cal Poly)." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/cal-poly-solar-electric-cooker-idea_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/cal-poly-solar-electric-cooker-idea_hu955037b34bce159d7713db9849e2dfcf_191365_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/cal-poly-solar-electric-cooker-idea_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: The principle of a solar electric cooker with solid heat storage. Drawing: California Polytechnic State University (Cal Poly). <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<h2 id="thermal-or-electric">Thermal or electric?</h2>
+<p>Like solar water and space heating systems, cooking and cooling can work both with and without electricity – with PV panels on the one hand and solar thermal collectors on the other. But while solar space and water heating are more cost- and energy-efficient without electricity, for solar cooling and solar cooking it is just the opposite.</p>
+<p>Space and water heating require relatively small temperature differences, which can be provided by low-cost solar thermal collectors made of glass plates and water pipes. In contrast, cooling and cooking require larger temperature differences, which require more sophisticated (vacuum tube or parabolic) solar collectors – and these are more expensive than PV panels. <sup id="fnref:20"><a class="footnote-ref" href="#fn:20" role="doc-noteref">20</a></sup> <sup id="fnref:21"><a class="footnote-ref" href="#fn:21" role="doc-noteref">21</a></sup></p>
+<p>The only exception is a simple solar cooker – an insulated box with a glass top – but it cannot achieve such high temperatures. Moreover, an electric solar cooker has some additional advantages. With a non-electric appliance, you have to cook outside, which is less practical but also less efficient, especially in winter: a thermal solar cooker will lose more heat to the environment. An electric solar cooker is also more energy-efficient because it is insulated on all sides. It also works better in cloudy weather and can be used after sunset. At the Living Energy Farm, the parabolic solar cooker is only used in optimal conditions – at full sun and high outdoor temperatures.</p>
+<h2 id="what-are-the-technical-challenges">What are the technical challenges?</h2>
+<p>Although the Living Energy Farm is putting all these applications of direct solar energy into practice, there are some technical challenges for those who want to follow suit. Almost all our modern technology is designed to operate with a stable and uninterrupted power supply. It doesn’t have to be that way, but for now, direct solar power usually requires some tinkering. A direct solar system is much easier to build than an autonomous system with batteries, but it often requires modifications on the appliance side.</p>
+<p>Some devices can be connected directly to a solar panel: it is enough to connect the positive and negative contacts of the solar panel and the device. For example, machines with a DC motor tolerate large fluctuations in the power supply. The metal workshop and agricultural machinery at the Living Energy Farm work this way. If clouds block the sun, the combined electrical load can become greater than the power supply from the solar panels, but this does not stop the machines. All the engines will slow down because they share the available energy, but they all continue to do useful work. <sup id="fnref4:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup> <sup id="fnref:22"><a class="footnote-ref" href="#fn:22" role="doc-noteref">22</a></sup></p>
+<p>The same applies to all appliances that work on the basis of resistive heating elements, such as kettles, hotplates or electric heating systems. They work regardless of power or voltage, just slower or faster. A direct solar-powered fridge preferably operates on a variable DC compressor, which can adjust its speed according to the varying solar power production. <sup id="fnref5:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup> <sup id="fnref:23"><a class="footnote-ref" href="#fn:23" role="doc-noteref">23</a></sup></p>
+<p>Many other devices need a specific and stable voltage input, which usually does not match what the solar panel produces. This can be solved by placing a DC-DC converter (a “buck” or “boost” converter) between the solar panel and the device. This is a small electronic module that converts the fluctuating voltage of a solar panel into a constant output voltage for a low-voltage device (5V, 12V or higher). <sup id="fnref:24"><a class="footnote-ref" href="#fn:24" role="doc-noteref">24</a></sup></p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: Experiments with direct solar power. Photo: Marie Verdeil." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/solar-behind-the-scenes-3_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/solar-behind-the-scenes-3_hu3723d1bfa66bca3707a8349d4521dfb0_1949217_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/solar-behind-the-scenes-3_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: Experiments with direct solar power. Photo: Marie Verdeil. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>If you use an inverter in addition to this, even mains appliances can operate directly on a solar panel. <sup id="fnref:25"><a class="footnote-ref" href="#fn:25" role="doc-noteref">25</a></sup> DC-DC converters are essential for all appliances that contain electronic components. This is the case for many appliances today, including those, such as washing machines or coffee machines, that until recently operated without electronics. That often gives you two options to run such appliances on direct solar power. You can either fit a DC-DC converter or modify the appliance by bypassing the electronics.</p>
+<h2 id="diy-manuals--commercial-devices">DIY manuals &amp; commercial devices</h2>
+<p>Most direct solar power applications <a href="https://solar.lowtechmagazine.com/2016/04/slow-electricity-the-return-of-dc-power/" target="_blank">operate at low voltage</a>, so you can safely do it yourself. Low-tech Magazine will soon publish a manual on this. However, the Living Energy Farm uses direct current with higher voltages for a number of applications. Examples are the machine tools in the metal workshop (90V) and a number of powerful electric solar cookers (48V, 180V). It is not a good idea to build these systems yourself unless you have the help of a qualified electrician, as these voltages can lead to fatal accidents.</p>
+<p>Those wishing to build their own (low-voltage) electric solar cookers will find comprehensive manuals at both Living Energy Farm and Cal Poly. <sup id="fnref:26"><a class="footnote-ref" href="#fn:26" role="doc-noteref">26</a></sup> The devices can be made with simple materials. The insulation material should be fireproof. Example materials are rock wool, fibreglass, natural wool or clay.goed</p>
+<p>Different technologies can be used for heating elements, but embedding nichrome wires in cement is the simplest option. These wires can be taken from a variety of appliances such as toasters, ovens and hotplates. In principle, the heating wires can be attached directly to the cooking pot, but it is more practical to make a heated “nest” in which a pot can be placed.</p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: Inspired by Cal Poly&amp;rsquo;s work, Living Energy Farm also developed a number of electric solar cookers, one of which they offer for sale through their website. The Roxy Oven can be used as a hotplate or an oven, for example for baking bread. The door also remains closed when used as a hot plate. This solar cooker has no energy storage." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/roxy-solar-oven_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/roxy-solar-oven_hu9809479d620858490edb26a9824fb373_657102_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/roxy-solar-oven_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: Inspired by Cal Poly’s work, Living Energy Farm also developed a number of electric solar cookers, one of which they <a href="https://livingenergylights.com/product/roxy-solar-electric-oven/" target="_blank">offer for sale through their website</a>. The Roxy Oven can be used as a hotplate or an oven, for example for baking bread. The door also remains closed when used as a hot plate. This solar cooker has no energy storage. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<div class="article-img vertical">
+<figure data-imgstate="dither">
+<img alt="Image: The Roxy Oven without the door and with the glass wool insulation visible. The device - made in the metal workshop with direct solar power - runs on 48V and requires a solar panel of 200 to 500 watts. Living Energy Farm also offers Sunstar&amp;rsquo;s solar refrigerator for sale online." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/roxy-deluxe-without-door_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/roxy-deluxe-without-door_hu2985667f03b400f6f307113f7c01927b_606301_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/roxy-deluxe-without-door_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: The Roxy Oven without the door and with the glass wool insulation visible. The device - made in the metal workshop with direct solar power - runs on 48V and requires a solar panel of 200 to 500 watts. Living Energy Farm also offers Sunstar’s solar refrigerator <a href="https://livingenergylights.com/product/sunstar-direct-drive-8-cuft-chest-style-refrigerator-freezer/" target="_blank">for sale online</a>. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<h2 id="does-direct-solar-power-waste-energy">Does direct solar power waste energy?</h2>
+<p>The sustainability of a solar installation depends not only on the energy required to produce and maintain the infrastructure, but also on the energy produced by the solar panels during their lifetime. Some people will argue that direct use of solar power is inferior to conventional grid-connected or battery-powered solar installations in this respect.</p>
+<p>After all, the hoover, washing machine and power drill are not used every day, and if no electrical appliance is connected then a solar panel will not produce power either. Consequently, the amount of electricity produced by the panel will decrease over its lifetime, while the energy needed to manufacture the panel remains the same. This makes the power from a direct solar panel more carbon-intensive.</p>
+<p>However, because energy storage in batteries (or the grid-connected alternative) accounts for such a large proportion of the total energy invested, a standalone solar panel can waste quite a lot of energy before it becomes less sustainable than its counterpart with battery storage or grid connection.</p>
+<p>Moreover, direct use of solar power avoids the charging and discharging losses caused by batteries, or the energy losses in the transmission infrastructure for grid-connected systems. Both have to be offset by additional solar panels. Furthermore, solar panels connected to batteries or the grid also waste power – a consequence of the large difference in energy production between summer and winter.</p>
+<h2 id="maximising-direct-solar-power-with-collective-services">Maximising direct solar power with collective services</h2>
+<p>Nevertheless, it is important to maximise the energy production of a direct solar panel. In that context, it is useful to return for a moment to the original example system located on my balcony. Direct solar power could be a nice addition to this system, especially for the fridge and cooker. It was because of these appliances that I <a href="https://solar.lowtechmagazine.com/2016/05/how-to-get-your-apartment-off-the-grid/" target="_blank">concluded in 2016 that it was impossible to completely disconnect my flat from the grid</a>.</p>
+<p>However, the Living Energy Farm shows that it could be done: there is room for a further 200 watts of solar panels (4 x 50W) on the balcony, enough to power both a thermally insulated fridge and hob. Additional battery capacity would not be needed.</p>
+<p>For other appliances, however, direct solar power is of little use in my case. It would not be very efficient to install an extra solar panel for the washing machine or the power drill, as they are only used occasionally. This seems to play into the hands of a “smart” electricity grid, because that way many households can use the same solar power – there is always someone who needs to wash clothes or drill a hole.</p>
+<p>However, such a smart grid does require a lot of infrastructure, even if direct solar power were to be used at that scale. It may not require batteries or fossil fuels as backup, but it does require transmission and communication infrastructure.</p>
+<div class="article-img">
+<figure data-imgstate="dither">
+<img alt="Image: A record player on direct solar power. Photo: Marie Verdeil. Watch the video." data-dither="/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-record-player_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/direct-solar-record-player_hub381fe4e70dc2ed6637e226f12a414d3_603288_800x800_fit_q90_h2_box.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/08/direct-solar-power-off-grid-without-batteries/images/dithers/direct-solar-record-player_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>Image: A record player on direct solar power. Photo: Marie Verdeil. <a href="https://www.youtube.com/watch?v=_LjSigJv0-0" target="_blank">Watch the video</a>. <svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>The Living Energy Farm demonstrates an alternative solution: the communal organisation of household tasks and work. Instead of a communal power grid distributing energy to many indidvidual households, we can set up collective services with decentralised energy production.</p>
+<p>In the Living Energy Farm communal workshop, direct solar power can be used much more efficiently than in an individual workshop that is only used occasionally. A collective laundry in each street would also use direct solar power much more efficiently. Moreover, we save a lot of energy on building appliances this way, and gain a lot of space.</p>
+<h2 id="direct-wind-power">Direct wind power?</h2>
+<p>This strategy becomes even more important if we choose not direct solar power but direct wind power – or a combination of both. The Living Energy Farm is located in a sunny region, but the same approach could also work in windy places.</p>
+<p>However, there is an important difference between solar power and wind power. The efficiency of a solar panel does not depend on its size, which makes solar power ideal for decentralised energy production. In contrast, the efficiency of a wind turbine <a href="https://solar.lowtechmagazine.com/2009/04/small-windmills-put-to-the-test/" target="_blank">increases more than proportionally as the rotor diameter increases</a>. Much better than one wind turbine per household, therefore, is a <a href="https://solar.lowtechmagazine.com/2019/06/reinventing-the-small-wind-turbine/" target="_blank">somewhat larger wind turbine</a> for a community of households, e.g. for powering a collective laundry or workshop.</p>
+</div>
+<div class="post-footer">
+<ul>
+<li><a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv">Subscribe to our newsletter</a>.</li>
+<li> Support Low-tech Magazine via <a href="https://www.paypal.me/lowtechmagazine">Paypal</a> or <a href="https://www.patreon.com/lowtechmagazine">Patreon</a>.</li>
+<li><a href="https://solar.lowtechmagazine.com/offline-reading/">Read Low-tech Magazine offline</a>.</li>
+</ul>
+</div>
+</section>
+<section class="comments" id="comments">
+<h2 id="comments-title">Comments </h2>
+<p><em>To make a comment, please send an e-mail to solar (at) lowtechmagazine (dot) com. Your e-mail address is not used for other purposes, and will be deleted after the comment is published. If you don’t want your real name to be published, sign the e-mail with the name you want to appear.</em></p>
+<details>
+<summary><span id="comment-count"></span> Reactions</summary>
+<div id="comments-list">
+<div class="comment">
+<h5>Greg</h5>
+<p>Hi Kris,
+Thanks for the research and write-up about direct solar power. It’s something I’ve been curious about for awhile.
+When interesting aspect that I don’t think you covered is what household appliances/processes can be interrupted? And can designs be changed to accomodate this?
+For example, with a very small amount of nonvolatile memory, my dishwasher could probably be turned off mid cycle due to temporary cloud cover, and recover when the sun came back.
+Related is the interesting problem of what happens if an unexpected interrupting cloud cover comes in and stays? At what point is the dishwasher (or clothes washer or cooker) going to become a health hazard, and how do you recover from that (can the door be opened, can the water be manually drained, etc.)?
+Thanks again,
+Greg</p>
+</div>
+<div class="comment">
+<h5>Nick</h5>
+<p>Hi,</p>
+<p>excellent article again about solar panels without batteries.</p>
+<p>have something to add:
+Next year I am going to move. In the new house an aircon is going to be installed which runs only on solar panels. no batteries.</p>
+<p>The idea is to move from using the aircon in the bedroom in the night on normal gridpower to using the aircon in the day. Our house is in a tropical country. During the day there is enough sun to use the aircon. the cold is going to be stored in the walls during the day, and so in the night the window can be opened and the radiation from the walls, will be not heat, but cold.</p>
+<p>the chinese offer these sets for about double price of a normal aircon. So that includes the aircon, solar panels, a controller (to 220v AC) and a small battery, which I assume is to compensate for startcurrent (aircon starts every 15min or so when set temp is reached). It will mean the electric bill will be strongly decreased.</p>
+<p>Nick</p>
+</div>
+<div class="comment">
+<h5>Mike</h5>
+<p>Hi Kris,</p>
+<p>Do you have some articles on the future of off-grid energy systems eg residential areas that only use renewable energy generated by the households in the area and are disconnected from the grid?
+And what are the technical, political and social challenges with this concept?</p>
+<p>Met vriendelijke groeten / Kind regards
+Mike</p>
+</div>
+<div class="comment">
+<h5>Chuck Young</h5>
+<p>Kris:</p>
+<p>Thank you for your thoughtful write up on direct solar power.
+It strikes me that it might be possible to use discarded car batteries.
+A car battery might have one or two bad cells, but the other cells might be just fine.
+It would involve connecting to the individual cells together.
+Has anyone looked at that?
+The price would be right!</p>
+<p>Chuck Young</p>
+</div>
+<div class="comment">
+<h5>Eric Koperek</h5>
+<p>1.To increase the energy efficiency of your refrigerator, place the refrigeration coils OUTSIDE your kitchen wall.  (You will need a few extra feet of copper tubing to do this).  Make sure the coils are constantly SHADED from the sun.  For best results, place refrigeration coils in a small fountain, fish pond, stock watering tank, or similar reservoir.  Water is a more efficient coolant than air.  Either way, you will cut the energy consumption of your refrigerator significantly.</p>
+<p>2.If you have running water on your property, consider building a Springhouse.  Cold water cools food much quicker than air.  I have 3 springhouses and a “streamhouse” (water is piped from a creek).  Springhouses have the convenience of a commercial walk-in cooler without any machinery to break or maintain.</p>
+<p>3.If you have to chill large amounts of vegetables, fruits, milk, meat, or fish, consider buying a “CoolBot”.  This device enables you to replace expensive commercial refrigeration units with cheap household air conditioners.</p>
+<p>4.In temperate climates you can always build an icehouse.  Insulate walls, ceiling, and floor with not less than 1 foot = 31 centimeters of foam insulation or an equivalent material.  You do not need a pond to harvest ice.  Build wood forms on dry land, then line with construction plastic sheeting to make giant “ice cube trays”.  Or fill plastic bottles with water then set them outside to freeze at night.</p>
+<p>5.It often freezes at night in the desert.  Set out SHALLOW saucers with just enough water to cover the bottom.  Scrape ice into a picnic cooler before the sun rises.</p>
+<p>ERIC KOPEREK
+<a href="https://www.worldagriculturesolutions.com" target="_blank">www.worldagriculturesolutions.com</a></p>
+</div>
+<div class="comment">
+<h5>Joey Hess</h5>
+<p>In my experience running my fridge directly from the sun for 4 years, an
+expensive “solar” DC fridge is not neccessary. I use a cheap consumer
+grade chest freezer. It may need twice as much power as a better
+insulated fridge, but solar panels are now very inexpensive. The extra
+solar panel capacity needed for a less efficient fridge comes in handy
+for other uses when the fridge is not running.</p>
+<p>My system does have a small battery, which is needed to safely run the
+inverter that powers the fridge. But when the sun stops producing enough
+power, it turns the fridge off, so it does not deplete the battery at all.
+(I describe the system in detail at <a href="https://fridge0.branchable.com/" target="_blank">https://fridge0.branchable.com/</a>)</p>
+<p>In a system where you have a small battery anyway for things like
+lighting, using AC power for intermittent loads when the sun is shining
+seems equally as good as DC direct drive.</p>
+</div>
+<div class="comment">
+<h5>Kris De Decker</h5>
+<p>Hi Joey,</p>
+<p>Love your project, which I have covered before: <a href="https://www.notechmagazine.com/2019/09/off-grid-solar-powered-zero-battery-refrigerator.html" target="_blank">https://www.notechmagazine.com/2019/09/off-grid-solar-powered-zero-battery-refrigerator.html</a></p>
+<p>Agreed that solar panels have become expensive, but space can be an issue, for in example in my case. I could fit enough solar panels on my balcony to power a well-insulated fridge, but I won’t be able to do that when powering a normal fridge.</p>
+</div>
+<div class="comment">
+<h5>Sigun Negun</h5>
+<p>Hi,
+This time, I largely disagree with the article. In the comments below the article, you added a lot of information and answered many questions, but since it didn’t make it into the article, in my opinion, it turned out to be inaccurate. While I agree with the main idea that ’electricity-storing batteries are far from a problem-solving solution,’ I agree with it for a different reason than what is listed in the article. The essential problem with solar power plants and batteries in countries farther from the equator is that in winter (or summer in southern hemisphere), solar power plants produce almost no useful energy. For example, in the summer, my solar power plant generates around 300-400 kWh per month, which is significantly more than my family consumes, including daily driving with an electric car. However, in November and February, it produces less than 80 kWh, and in December and January, just around 15 kWh. There’s no way to store the surplus energy generated in the summer for use in the winter. That’s the fundamental problem, you can’t solve with personal storage.
+Daily produced energy and storage is not a big problem. One can simply add more solar panels and a small buffer battery to prevent devices from shutting down when clouds come in.</p>
+<p>Regarding the calculations in the article: You mentioned that your system is not cost-effective, and in the comments, you supplemented it with additional research. However, without real numbers, one could get the wrong impression that this is not a significant difference. But the difference is enormous:</p>
+<p>For the amount you mentioned, 120 euros, you can currently purchase a 400-425 W solar panel instead of 2x50W. That means the cost per watt is four times lower. Additionally, the energy consumed for the production of a solar panel is around 1000 MJ/kW. I’m also driven crazy every time calculations are made assuming that we’ll throw away the solar panels and buy new ones after 25 or 30 years. After 30, 35, and even more years, solar panels will still work; they will just generate 20-40% less energy than new ones. So, there’s no need to throw everything away and buy new ones. I’m aware of nuances related to different panels, but everything can be solved. For example, older 360W and newer 595W panels work perfectly for me.
+The capacity of lithium batteries only drops by about 2% per year if charged/discharged by 30-60% of their capacity per day. These are the real usage data for my lithium batteries. Even after 20 years, such batteries will retain more than half of their initial capacity, and I don’t see any reason to throw them away and replace them with new ones. I will buy only half storage. So, the embeded energy for creating them and monetary costs in the article are greatly exaggerated.
+Finally, let’s talk about prices. The price of an MPPT charger that cannot charge lithium batteries differs only slightly from one that can, mainly due to updated software with additional charging modes. Power electronics differ slightly if they differ at all. For those looking for an affordable and quality battery and not afraid to do a bit of DIY, look for salvaged EV batteries from accidents. You can find offers for around 150 euros per kWh + 30-50 eur for BMS and assemble batteries of your desired voltage, allowing you to make the most of your solar panels and chargers.</p>
+</div>
+<div class="comment">
+<h5>Jordi C.</h5>
+<p>Hello Kris, I think the calculation of storage would change radically if we considered new technology, specially LFP Battery storage, for example modules from SOK or other brands that offer a kw for around 200€, with 8-10 year warranties and long discharge cycles. The % of the total installation dedicated to storage would change substantially.</p>
+<p>This matters because once storage reaches a certain level where a long transmission lines make very little economic sense, we will see a global change on how we develop infrastructure, I consider this point important, and the article does not point to that being a possibility, when it very much is today, and it will be in the next 5 years.  Greetings, Jordi C.</p>
+</div>
+</div>
+</details>
+</section>
+<section id="reference">
+<div class="footnotes" role="doc-endnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>The service life of lead-acid batteries depends on many factors. If they are discharged too deeply or are not fully charged regularly, the service life can be shorter than three years. On the other hand, a lead-acid battery that is hardly used or not discharged at all can last much longer than five years. However, the academic literature states a life expectancy of three to five years and this has also been my experience with the batteries I have used since 2016. See, for example, “Optimal Sizing and Life Cycle Assessment of Residential Photovoltaic Energy Systems With Battery Storage”, A. Celik, in “Progress in Photovoltaics: Research and Applications”, 2008. &amp; “Energy pay-back time of photovoltaic energy systems: present status and prospects”, E.A. Alsema, in “Proceedings of the 2nd World Conference and Exhibition on photovoltaics solar energy conversion”, July 1998. <a class="footnote-backref" href="#fnref:1" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:2">
+<p>Manufacturing a lead-acid battery (based on largely recycled materials) takes about 1 MJ of energy per watt-hour of storage capacity. My 100 amp-hour battery equates to a storage capacity of 1,200 watt-hours, and so the embedded energy equals 1,200 MJ. Over a 30-year lifespan, I need six of these batteries at best, so 7,200 MJ in total. Source: “Energy Analysis of Batteries in Photovoltaic systems. Part one (Performance and energy requirements)” and “Part two (Energy Return Factors and Overall Battery Efficiencies)” (PDF). Energy Conversion and Management 46, 2005. <a class="footnote-backref" href="#fnref:2" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:3">
+<p>Not much research has been done on the embedded energy of charge controllers. The most relevant data I found is a value of 1 MJ per watt maximum power: Kim, Bunthern, et al. “Life cycle assessment for a solar energy system based on reuse components for developing countries.” Journal of cleaner production 208 (2019): 1459-1468. For a capacity of 120W (my charge controller has a maximum capacity of 10A x 12V = 120W), this amounts to 120 MJ. For the estimated lifetime, I found values of 7 and 12.5 years: same reference as above, as well as: Kim, Bunthern, et al. “Second life of power supply unit as charge controller in PV system and environmental benefit assessment.” IECON 2016-42nd Annual Conference of the IEEE Industrial Electronics Society. IEEE, 2016. I therefore made the calculation on an estimated lifetime of 10 years. <a class="footnote-backref" href="#fnref:3" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:4">
+<p>Nawaz, I., and G. N. Tiwari. “Embodied energy analysis of photovoltaic (PV) system based on macro-and micro-level.” Energy Policy 34.17 (2006): 3144-3152. According to this widely quoted source, it takes 3,500 MJ to produce 1 m2 of solar panel. My two solar panels together measure 0.65 m2, representing a total energy cost of 2,275 MJ. A more recent literature review puts the energy cost for producing different types of solar panels at between 1,034 and 5,150 MJ/m2. The most recent studies of silicon solar panels in this review put the energy cost at around 1,000 MJ/m2, much lower than the figure I am using. See: Ludin, Norasikin Ahmad, et al. “Prospects of life cycle assessment of renewable energy from solar photovoltaic technologies: A review.” Renewable and Sustainable Energy Reviews 96 (2018): 11-28. <a class="footnote-backref" href="#fnref:4" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:5">
+<p>Lithium-ion batteries are a lot more expensive than lead-acid batteries, but unlike lead-acid batteries, they can be discharged deeper (up to 15% of their total capacity) and have a longer lifespan (7 to 10 years). Consequently, fewer and smaller batteries are needed. Taking these factors into account, the lifetime cost of the battery is €750, compared with €1,020 for lead-acid batteries. On the other hand, lithium-ion batteries require a more sophisticated and more expensive charge controller: a 10A charge controller costs between 200 and 600 euros, depending on the quality. Assuming a price of 400 euros for the charge controller and a 10-year lifetime for both the battery and the charge controller, battery storage accounts for 95% of the total lifetime cost (a total of 2,070 euros, much more than the total cost for the system with lead-acid batteries). Sources: <a href="https://www.lithiumion-batteries.com/products/product/12v-50ah-lithium-ion-battery" target="_blank">https://www.lithiumion-batteries.com/products/product/12v-50ah-lithium-ion-battery</a> &amp; <a href="https://www.lithiumion-batteries.com/products/12v-lithium-ion-battery-chargers/" target="_blank">https://www.lithiumion-batteries.com/products/12v-lithium-ion-battery-chargers/</a> <a class="footnote-backref" href="#fnref:5" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:6">
+<p>Although the production of a lithium-ion battery costs more energy than the production of a lead-acid battery (1.4-1.9 MJ/Wh versus 1 MJ/Wh), this is offset by a longer lifespan and greater discharge capacity. The energy cost of lithium-ion batteries over a 30-year lifetime is then about 3,000 MJ, significantly less than a comparable lead-acid battery system. In contrast, the charge controller contains more complex electronics. Unfortunately, no data is available for the energy cost of such a charge controller. So there is no alternative but to estimate the energy cost based on the financial cost, which is four to twelve times more expensive than a charge controller for a lead-acid battery. Assuming a four times higher cost, the embedded energy of the charge controller increases to 480 MJ, or 1,440 MJ over a 30-year period. The total energy cost for the system is then 6,685 MJ, less than a comparable system with lead-acid batteries. Of this, almost 70% is attributable to battery storage. <a class="footnote-backref" href="#fnref:6" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:7">
+<p>Nickel-iron batteries are even bigger and heavier than lead-acid batteries and they need regular maintenance. But they can be fully discharged and have a very long service life (20 years). Moreover, they can be used with the same charge controllers as lead-acid batteries. The lifetime cost over 30 years for the battery is €750, cheaper than the six lead-acid batteries of similar capacity. The total lifetime cost for a nickel-iron battery system with 100W solar panels is €1,020, of which 85% goes to energy storage. Unfortunately, nickel-iron batteries are hard to find, especially the smaller models. Sources: <a href="https://beyondoilsolar.com/product/nickel-iron-battery-industrial-series/" target="_blank">https://beyondoilsolar.com/product/nickel-iron-battery-industrial-series/</a> &amp; <a href="https://beyondoilsolar.com/product-category/batteries/nickel-iron/" target="_blank">https://beyondoilsolar.com/product-category/batteries/nickel-iron/</a> <a class="footnote-backref" href="#fnref:7" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:8">
+<p>Actually, the price of solar panels in a somewhat larger solar installation would be proportionally even smaller. This is because solar panels with small sizes (such as 50W) are proportionally more expensive per watt of peak capacity than solar panels with more conventional sizes (from 250W onwards). More or less the same applies to the energy cost. <a class="footnote-backref" href="#fnref:8" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:9">
+<p><a href="https://livingenergyfarm.org" target="_blank">https://livingenergyfarm.org</a> <a class="footnote-backref" href="#fnref:9" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:10">
+<p>Alexis Zeigler, founder of the Living Energy Farm, wrote a book about the project, which is available in full online: <a href="https://conev.org/empoweringcommunities14.pdf" target="_blank">Empowering Communities. A Practical Guide to Energy Self Sufficiency and Stopping Climate Change</a>. It can also be <a href="https://conev.org/" target="_blank">ordered in hard copy</a>. <a class="footnote-backref" href="#fnref:10" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref1:10" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref2:10" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref3:10" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref4:10" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref5:10" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref6:10" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:11">
+<p>Since direct solar power does not require a charge controller for each separate system, splitting up a solar system does not involve any additional costs or energy consumption. <a class="footnote-backref" href="#fnref:11" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:12">
+<p>Research shows that doubling the insulation thickness from 2.5 cm (standard insulation) to 5 cm reduces the annual electricity consumption of a refrigerator (50 litre capacity) from 250 to 125 kilowatt hours. <sup id="fnref1:13"><a class="footnote-ref" href="#fn:13" role="doc-noteref">13</a></sup> With an insulation thickness of 10 to 12.5 cm, electricity consumption halves again to around 60 kilowatt hours per year. Even thicker insulation brings a smaller reduction in electricity consumption and is no longer attractive because thicker insulation also increases the cost and size of the refrigerator. The study concerns a solar-powered AC fridge that operates thanks to an inverter and a battery, which is less energy-efficient than a direct solar-powered fridge. <a class="footnote-backref" href="#fnref:12" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:13">
+<p>Gupta, B. L., Mayank Bhatnagar, and Jyotirmay Mathur. “Optimum sizing of PV panel, battery capacity and insulation thickness for a photovoltaic operated domestic refrigerator.” Sustainable Energy Technologies and Assessments 7 (2014): 55-67. <a class="footnote-backref" href="#fnref:13" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref1:13" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:14">
+<p>This thermal mass can literally be a container of water placed inside the fridge. or some water bottles for drinking. But the water can also be stored in reservoirs along the side of the appliance, behind an inner lining that keeps them in place and hides them from view. Water has a higher heat storage density than air, keeping the temperature stable for longer. <a class="footnote-backref" href="#fnref:14" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:15">
+<p>Ewert, M., et al. “Photovoltaic direct drive, battery-free solar refrigerator field test results.” Proceedings of the solar conference. American solar energy society; American institute of architects, 2002. <a class="footnote-backref" href="#fnref:15" role="doc-backlink">↩︎</a> <a class="footnote-backref" href="#fnref1:15" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:16">
+<p>This advantage only applies if the fridge is set up in an unheated room. The modern habit of placing a fridge in a heated kitchen when the outside temperature in winter is equal or lower than that in the fridge is obviously absurdly wasteful. But neither is this advantage valid in tropical countries, where temperatures are high all year round. <a class="footnote-backref" href="#fnref:16" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:17">
+<p>The use of direct solar power for space cooling has not been analysed as thoroughly as for domestic refrigerators. See: Luerssen, Christoph, et al. “Life cycle cost analysis (LCCA) of PV-powered cooling systems with thermal energy and battery storage for off-grid applications.” Applied energy 273 (2020): 115145. Moreover, it is unlikely to achieve equally large energy savings. A refrigerator is always insulated, but in the case of an air-cooled room or building, this is not necessarily the case. Moreover, a refrigerator is set up in a room where there is a stable temperature. A building is subject to greater temperature fluctuations and can also be heated by direct solar radiation. So direct solar air cooling is a lot more complicated. See: Qi, Ronghui, Lin Lu, and Yu Huang. “Parameter analysis and optimisation of the energy and economic performance of solar-assisted liquid desiccant cooling system under different climate conditions.” Energy conversion and management 106 (2015): 1387-1395. <a class="footnote-backref" href="#fnref:17" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:18">
+<p><a href="http://sharedcurriculum.peteschwartz.net/solar-electric-cooking/" target="_blank">Solar Electric Cooking</a>, Pete Schwartz, Cal Poly Physics. See also <a href="http://sharedcurriculum.peteschwartz.net/wp-content/uploads/sites/3/2022/11/New-ISEC-Design-Ideas.pdf" target="_blank">this PowerPoint</a> by the same author. <a class="footnote-backref" href="#fnref:18" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:19">
+<p><a href="https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1747&amp;context=mesp" target="_blank">Insulated Solar Electric Cooker with Solid Thermal Storage</a>, Andrew McCombs et al., 2022. See also <a href="https://www.youtube.com/watch?v=FKIH7HDK6Dw" target="_blank">this video</a>. <a class="footnote-backref" href="#fnref:19" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:20">
+<p>See: Ferreira, Carlos Infante, and Dong-Seon Kim. “Techno-economic review of solar cooling technologies based on location-specific data.” International Journal of Refrigeration 39 (2014): 23-37. ///// Riffat, James, et al. “Development and testing of a PCM enhanced domestic refrigerator with use of miniature DC compressor for weak/off grid locations.” International Journal of Green Energy 19.10 (2022): 1118-1131. ///// Du, Wenping, et al. “Dynamic energy efficiency characteristics analysis of a distributed solar photovoltaic direct-drive solar cold storage.” Building and Environment 206 (2021): 108324. ///// Alsagri, Ali Sulaiman. “Photovoltaic and photovoltaic thermal technologies for refrigeration purposes: an overview.” Arabian journal for science and engineering 47.7 (2022): 7911-7944. <a class="footnote-backref" href="#fnref:20" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:21">
+<p>For lack of research, whether the same applies to embedded energy consumption is not clear. <a class="footnote-backref" href="#fnref:21" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:22">
+<p>In both cases, however, it is necessary to bypass the device’s switch, because DC electricity produces more heat than AC electricity. Instead, a suitable external switch can help, but in doing so you bypass the device’s safety mechanism, which is obviously a risk. <sup id="fnref6:10"><a class="footnote-ref" href="#fn:10" role="doc-noteref">10</a></sup> Again, this does not have to be the case: it is technically possible to make devices suitable for direct solar power. <a class="footnote-backref" href="#fnref:22" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:23">
+<p>A fixed-speed compressor can only use 50% of the solar power produced in a useful way, while a variable-speed compressor uses about 75% in a useful way. <sup id="fnref1:15"><a class="footnote-ref" href="#fn:15" role="doc-noteref">15</a></sup> A capacitor is needed to provide the compressor with an energy boost during the start-up phase. <a class="footnote-backref" href="#fnref:23" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:24">
+<p>Instead of a DC-DC converter, you can also install a small “buffer battery” and a charge controller. Like a DC-DC converter, the charge controller will ensure a stable output voltage. In addition, the small battery can provide limited energy storage that can be useful to handle short spikes in power consumption. For example, some devices have a current spike when charging. The disadvantage of a buffer battery is that the cost and embedded energy increase, and additional components can fail. A capacitor is an alternative technology to absorb power peaks. <a class="footnote-backref" href="#fnref:24" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:25">
+<p>However, using low-voltage direct current devices is a lot more energy-efficient because solar panels also produce low-voltage direct current: <a href="https://solar.lowtechmagazine.com/2016/04/slow-electricity-the-return-of-dc-power/" target="_blank">https://solar.lowtechmagazine.com/2016/04/slow-electricity-the-return-of-dc-power/</a> <a class="footnote-backref" href="#fnref:25" role="doc-backlink">↩︎</a></p>
+</li>
+<li id="fn:26">
+<p><a href="https://conev.org/ISECmanual14.pdf" target="_blank">Insulated Solar Cooker Construction Manual</a>, Living Energy Farm. <a href="http://sharedcurriculum.peteschwartz.net/isecooker-construction/" target="_blank">Insulated solar electric cooker manual</a>, Pete Schwartz, Cal Poly Physics. <a href="https://livingenergylights.com/wp-content/uploads/2022/08/roxy-installation-instructions.pdf" target="_blank">Roxy Oven Manual</a>, Living Energy Farm. <a href="https://www.youtube.com/watch?v=SIDG8fTvf-I" target="_blank">Video presentation manual solar electric cookers</a>, Alexis Zeigler, Living Energy Farm. <a href="https://www.youtube.com/watch?v=uzZPstX1CbQ" target="_blank">Video manual for making heating wires</a>. Thermal heat storage: <a href="https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1747&amp;context=mesp" target="_blank">Insulated Solar Electric Cooker with Solid Thermal Storage</a>, Andrew McCombs et al., 2022. Also see <a href="https://www.youtube.com/watch?v=FKIH7HDK6Dw" target="_blank">this video</a>. <a class="footnote-backref" href="#fnref:26" role="doc-backlink">↩︎</a></p>
+</li>
+</ol>
+</div>
+</section>
+<section class="article-list" id="related">
+<h3 class="related">Related Articles</h3>
+<div class="post-info gray">
+<p class="tags">Themes:
+		        
+		            <a class="tag" href="https://solar.lowtechmagazine.com/tags/solar-power/">Solar Power</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/energy-storage/">Energy Storage</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/off-the-grid/">Off-The-Grid</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/cooking-and-food-preservation/">Cooking and Food Preservation</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/diy/">DIY</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/industry-and-manufacturing/">Industry and Manufacturing</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/energy-security/">Energy Security</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/thermal-insulation/">Thermal Insulation</a>
+</p>
+</div>
+<div class="grid">
+<div class="article low-tech-solutions">
+<a href="https://solar.lowtechmagazine.com/2016/05/how-to-get-your-apartment-off-the-grid/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2016/05/how-to-get-your-apartment-off-the-grid/images/dithers/solar-panels-window-sills_dithered.png');"></div>
+<h3 class="entry-title">How to Get Your Apartment Off the Grid</h3>
+<p class="index-summary">Solar panels on window sills and balconies can supply more power than you would think.</p>
+<time class="published">May 17, 2016</time>
+</a>
+</div>
+<div class="article low-tech-solutions">
+<a href="https://solar.lowtechmagazine.com/2023/07/human-powered-air-compressor-and-energy-storage-system/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2023/07/human-powered-air-compressor-and-energy-storage-system/images/dithers/human-powered-air-compressor-1_dithered.png');"></div>
+<h3 class="entry-title">Human Powered Air Compressor and Energy Storage System</h3>
+<p class="index-summary">Andy Lagzdins built and documented a pedal-powered air compressor to run the power tools in his motorcycle workshop.</p>
+<time class="published">July 9, 2023</time>
+</a>
+</div>
+<div class="article low-tech-solutions">
+<a href="https://solar.lowtechmagazine.com/2020/05/thermoelectric-stoves-ditch-the-solar-panels/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2020/05/thermoelectric-stoves-ditch-the-solar-panels/images/dithers/thermoelectric-stove-intro_dithered.png');"></div>
+<h3 class="entry-title">Thermoelectric Stoves: Ditch the Solar Panels?</h3>
+<p class="index-summary">Wood stoves equipped with thermoelectric generators can produce electricity that is more sustainable, more reliable, and less costly than power from solar PV panels.</p>
+<time class="published">May 26, 2020</time>
+</a>
+</div>
+<div class="article low-tech-solutions">
+<a href="https://solar.lowtechmagazine.com/2018/12/keeping-some-of-the-lights-on-redefining-energy-security/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2018/12/keeping-some-of-the-lights-on-redefining-energy-security/images/dithers/lighter_dithered.png');"></div>
+<h3 class="entry-title">Keeping Some of the Lights On: Redefining Energy Security</h3>
+<p class="index-summary">To improve energy security, we need to make infrastructures less reliable.</p>
+<time class="published">December 9, 2018</time>
+</a>
+</div>
+</div>
+</section>
+</article>
+</main>
+<footer class="site-footer">
+<div id="page-size">1017.18KB</div>
+<div id="back-to-top"><a href="#top" id="" title="Back to top"> ↑ </a></div>
+<h2>
+<a href="https://solar.lowtechmagazine.com/">LOW←TECH MAGAZINE</a>
+</h2>
+<div class="dashboard">
+<ul class="grid">
+<li>
+<h3>Server Stats</h3>
+<dl id="stats">
+</dl>
+</li>
+<li>
+<h3>Forecast</h3>
+<div class="forecast"></div>
+</li>
+<li>
+<h3>Info</h3>
+<div class="footer-links">
+<a href="https://solar.lowtechmagazine.com/about">
+  About
+</a>
+<a href="https://solar.lowtechmagazine.com/power">
+  Power
+</a>
+<a href="https://solar.lowtechmagazine.com/about/team">
+  Colophon
+</a>
+<a href="https://solar.lowtechmagazine.com/donate">
+  Donate
+</a>
+<a href="/privacy">
+  Privacy Policy
+</a>
+</div>
+</li>
+<li>
+<h3>Contact</h3>
+<p>
+                    © Kris De Decker<br/> solar [at] lowtechmagazine [dot] com</p>
+<div class="social">
+<a href="/feeds" rel="alternate" target="_blank" type="application/atom+xml"><svg class="icon" viewbox="0 0 80 80"><title>RSS Feed</title><circle cx="19.91" cy="58.23" r="6.86"></circle><path d="M67.89,65.72H55.7A41.86,41.86,0,0,0,13.89,23.91V11.73A54.06,54.06,0,0,1,67.89,65.72Z"></path><path d="M48.93,65.72H36.75A22.88,22.88,0,0,0,13.89,42.87V30.68A35.08,35.08,0,0,1,48.93,65.72Z"></path></svg></a>
+<a href="https://twitter.com/lowtechmagazine" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Twitter</title><path d="M65.05,29.23c0,.56,0,1.12,0,1.68,0,17.1-13,36.8-36.8,36.8A36.54,36.54,0,0,1,8.44,61.91a26.68,26.68,0,0,0,3.12.16,25.9,25.9,0,0,0,16.06-5.53,13,13,0,0,1-12.09-9,16.28,16.28,0,0,0,2.44.2,13.67,13.67,0,0,0,3.4-.44A12.93,12.93,0,0,1,11,34.64v-.16a13,13,0,0,0,5.85,1.64,13,13,0,0,1-4-17.3A36.76,36.76,0,0,0,39.51,32.36a14.58,14.58,0,0,1-.32-3,12.95,12.95,0,0,1,22.38-8.85,25.45,25.45,0,0,0,8.21-3.12,12.9,12.9,0,0,1-5.69,7.13,25.93,25.93,0,0,0,7.45-2A27.79,27.79,0,0,1,65.05,29.23Z"></path></svg></a>
+<a href="https://www.patreon.com/lowtechmagazine" target="_blank"><svg class="icon" preserveaspectratio="xMidYMid" transform="scale(0.85)" viewbox="0 -4.5 256 256"><title>Patreon</title><path d="M45.1355837,0 L45.1355837,246.35001 L0,246.35001 L0,0 L45.1355837,0 Z M163.657111,0 C214.65668,0 256,41.3433196 256,92.3428889 C256,143.342458 214.65668,184.685778 163.657111,184.685778 C112.657542,184.685778 71.3142222,143.342458 71.3142222,92.3428889 C71.3142222,41.3433196 112.657542,0 163.657111,0 Z"> </path></svg></a>
+<a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Newsletter</title><path d="M4.95,13.14v55H74.33v-55Zm54.34,8.12L39.64,39.74,20,21.26ZM13.07,60V25.91l26.56,25,26.57-25V60Z"></path></svg></a>
+</div>
+</li>
+</ul>
+</div>
+</footer>
+<script src="https://solar.lowtechmagazine.com/js/script.js"></script>
+</body>
+</html>

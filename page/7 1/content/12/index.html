@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Rebuilding a Solar Powered Website | LOW←TECH MAGAZINE</title>
+<meta content="This is a solar-powered website, which means it sometimes goes offline" name="description"/>
+<meta content="Kris De Decker" name="author"/>
+<link href="https://solar.lowtechmagazine.com/icons/sun.svg" rel="icon"/>
+<link href="https://solar.lowtechmagazine.com/css/style.css" rel="stylesheet"/><meta content="Rebuilding a Solar Powered Website" property="og:title">
+<meta content="Rebuilding a Solar Powered Website" name="twitter:title">
+<meta content="You’re looking at a completely rebuilt version of the solar powered website, which now allows you to turn off the dithering compression and see the original images." property="og:description">
+<meta content="You’re looking at a completely rebuilt version of the solar powered website, which now allows you to turn off the dithering compression and see the original images." name="twitter:description">
+<meta content="article" property="og:type">
+<meta content="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/" property="og:url"/>
+<meta content="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/images/dithers/solar-hugo-screenshot_dithered.png" itemprop="image" property="og:image"/>
+<meta content="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/images/dithers/solar-hugo-screenshot_dithered.png" property="og:image:secure_url"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="summary_large_image" name="twitter:card">
+<meta content="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/images/dithers/solar-hugo-screenshot_dithered.png" name="twitter:image"/>
+<meta content="posts" property="article:section"/>
+<meta content="2023-06-13T00:00:00+00:00" property="article:published_time"/>
+<meta content="2023-06-13T00:00:00+00:00" property="article:modified_time"/><meta content="LOW←TECH MAGAZINE" property="og:site_name"/>
+<meta content="Kris De Decker" property="article:author"/>
+<meta content="Kris De Decker" name="citation_author"/>
+<meta content="Marie Otsuka" property="article:author">
+<meta content="Marie Otsuka" name="citation_author"/>
+<meta content="Roel Roscam Abbing" property="article:author">
+<meta content="Roel Roscam Abbing" name="citation_author"/>
+<meta content="Marie Verdeil" property="article:author">
+<meta content="Marie Verdeil" name="citation_author"/>
+<meta content="ICT" property="article:tag">
+<meta content="Solar Powered Website" property="article:tag"/>
+<meta content="Internet" property="article:tag"/>
+<meta content="Computer Software" property="article:tag"/>
+</meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body id="rebuilding-a-solar-powered-website">
+<div class="battery_bg">
+<div class="bat_status" data-charging="no" id="battery_data">
+<a href="https://solar.lowtechmagazine.com/power/" title="Power">
+<span id="charge_icon">
+<svg class="icon battery-svg" viewbox="0 0 500 500"><title>Battery used</title><polygon class="svg_stroke" points="327.01 127.16 327.01 47.31 172.99 47.31 172.99 127.16 115.52 127.16 115.52 452.69 384.48 452.69 384.48 127.16 327.01 127.16"></polygon><polygon class="svg_fill" points="357.64 408.86 158.26 408.86 158.26 209.49 357.64 408.86"></polygon></svg>
+<svg class="icon sun-svg" viewbox="0 0 500 500"><title>Battery charging</title><circle class="svg_fill" cx="248.48" cy="252.55" r="97.03"></circle><rect class="svg_fill" height="112.39" width="27.9" x="234.53" y="17.45"></rect><rect class="svg_fill" height="112.39" width="27.9" x="234.53" y="375.25"></rect><rect class="svg_fill" height="112.39" transform="translate(679.92 -174.83) rotate(90)" width="27.9" x="413.42" y="196.35"></rect><rect class="svg_fill" height="112.39" transform="translate(322.12 182.97) rotate(90)" width="27.9" x="55.63" y="196.35"></rect><rect class="svg_fill" height="112.39" transform="translate(198.96 -228.23) rotate(45)" width="27.9" x="361.03" y="69.85"></rect><rect class="svg_fill" height="112.39" transform="translate(303.75 24.77) rotate(45)" width="27.9" x="108.03" y="322.85"></rect><rect class="svg_fill" height="112.39" transform="translate(908.15 381.93) rotate(135)" width="27.9" x="361.03" y="322.85"></rect><rect class="svg_fill" height="112.39" transform="translate(297.35 128.93) rotate(135)" width="27.9" x="108.03" y="69.85"></rect></svg>
+</span>
+<span id="level"></span></a>
+</div>
+<div id="battery">
+</div>
+</div>
+<header class="site-header">
+<h1><a href="https://solar.lowtechmagazine.com/" id="top">LOW←TECH MAGAZINE</a></h1>
+<div class="subtitle">
+<a href="https://solar.lowtechmagazine.com/power">This is a solar-powered website, which means it sometimes goes offline      
+    </a>
+</div>
+<nav id="menu">
+<div id="menu-s">
+<div id="lang-menu" title="languages">
+<svg class="icon" id="globe" viewbox="0 0 19.97 19.97" xmlns="http://www.w3.org/2000/svg"><circle class="stroke" cx="9.99" cy="9.99" r="9.24"></circle><ellipse class="stroke" cx="9.99" cy="9.99" rx="4.63" ry="9.24"></ellipse><line class="stroke" x1="9.99" x2="9.99" y1="0.75" y2="19.22"></line><line class="stroke" x1="18.39" x2="1.58" y1="12.99" y2="12.99"></line><line class="stroke" x1="18.39" x2="1.58" y1="6.99" y2="6.99"></line></svg>
+</div>
+<nav id="languages">
+<ul>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/">English</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/fr/">Français</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/de/">Deutsch</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/nl/">Nederlands</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/es/">Español</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/it/">Italiano</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/pt/">Português</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/pl/">Polski</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/ar/">العربية</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/vn/">Tiếng Việt</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/ko/">한국어</a>
+</li>
+</ul>
+</nav>
+<span id="m-btn">menu</span>
+</div>
+<ul id="menu-list">
+<li class="">
+<a data-nav="about" href=" /about/ ">
+<span>About</span>
+</a>
+</li>
+<li class="">
+<a data-nav="low-tech-solutions" href=" /low-tech-solutions/ ">
+<span>Low-tech Solutions</span>
+</a>
+</li>
+<li class="">
+<a data-nav="high-tech-problems" href=" /high-tech-problems/ ">
+<span>High-tech Problems</span>
+</a>
+</li>
+<li class="">
+<a data-nav="obsolete-technology" href=" /obsolete-technology/ ">
+<span>Obsolete Technology</span>
+</a>
+</li>
+<li class="">
+<a data-nav="offline-reading" href=" /offline-reading/ ">
+<span>Offline Reading</span>
+</a>
+</li>
+<li class="">
+<a data-nav="archive" href=" /archives/ ">
+<span>Archive</span>
+</a>
+</li>
+<li class="">
+<a data-nav="donate" href=" /donate/ ">
+<span>Donate</span>
+</a>
+</li>
+<li class="">
+<a data-nav="ntm" href=" https://www.notechmagazine.com/ " target="_blank">
+<span>NTM</span>
+</a>
+</li>
+<li class="rss">
+<a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Newsletter</title><path d="M4.95,13.14v55H74.33v-55Zm54.34,8.12L39.64,39.74,20,21.26ZM13.07,60V25.91l26.56,25,26.57-25V60Z"></path></svg></a>
+<a href="/feeds" rel="alternate" target="_blank" type="application/atom+xml"><svg class="icon" viewbox="0 0 80 80"><title>RSS Feed</title><circle cx="19.91" cy="58.23" r="6.86"></circle><path d="M67.89,65.72H55.7A41.86,41.86,0,0,0,13.89,23.91V11.73A54.06,54.06,0,0,1,67.89,65.72Z"></path><path d="M48.93,65.72H36.75A22.88,22.88,0,0,0,13.89,42.87V30.68A35.08,35.08,0,0,1,48.93,65.72Z"></path></svg></a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="article low-tech-solutions">
+<article>
+<section class="article" id="content">
+<header class="entry-header">
+<h1 class="entry-title">
+				Rebuilding a Solar Powered Website</h1>
+<p class="summary">
+					You’re looking at a completely rebuilt version of the solar powered website, which now allows you to turn off the dithering compression and see the original images.
+				</p>
+<div class="metadata">
+<div><time class="published">June 13, 2023</time> </div>
+<div class="authors">
+<span class="byline">Written by</span>
+<span class="author"><a href="https://solar.lowtechmagazine.com/authors/kris-de-decker/">Kris De Decker</a></span>
+<span class="author"><a href="https://solar.lowtechmagazine.com/authors/marie-otsuka/"> Marie Otsuka</a></span>
+<span class="author"><a href="https://solar.lowtechmagazine.com/authors/roel-roscam-abbing/"> Roel Roscam Abbing</a></span>
+<span class="author"><a href="https://solar.lowtechmagazine.com/authors/marie-verdeil/">Marie Verdeil</a></span>
+</div>
+<div class="translations">
+<span class="byline">Translations</span>
+<a href="https://solar.lowtechmagazine.com/fr/2023/06/rebuilding-a-solar-powered-website/">fr</a>
+<a href="https://solar.lowtechmagazine.com/de/2023/06/rebuilding-a-solar-powered-website/">de</a>
+</div>
+</div>
+</header>
+<div class="entry-content"><div class="article-img">
+<figure data-imgstate="dither">
+<img alt="A screenshot of the markdown file for this page." data-dither="/2023/06/rebuilding-a-solar-powered-website/images/dithers/solar-hugo-screenshot_dithered.png" data-original="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/images/solar-hugo-screenshot_hu8c340b07e6b745bcd1d3b59be3f17d61_660221_800x800_fit_q90_h2_box_3.webp" loading="lazy" src="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/images/dithers/solar-hugo-screenshot_dithered.png"/> </figure>
+<div class="figure-controls">
+<figcaption class="caption">
+<p>A screenshot of the markdown file for this page.
+<svg class="dither-toggle icon" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="37.93" y="37.86"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="13.58"></rect><rect class="svg_fill" height="24.28" width="24.28" x="13.51" y="62.14"></rect><rect class="svg_fill" height="24.28" width="24.28" x="62.21" y="62.14"></rect>
+</svg></p>
+<div class="imgindicator">
+<span class="tooltip view-orig">
+  View original image
+</span>
+<span class="tooltip view-dither">
+  View dithered image
+</span>
+</div>
+</figcaption>
+</div>
+</div>
+<p>During the last months we have been working on switching the solar powered website from one static site generator (Pelican) to another (Hugo). Many readers will not notice the changes right away, as we have not made any major adjustments to the design. Nevertheless, the new platform has allowed us to address some issues based on the feedback we received over the years.</p>
+<p>The new solar website was designed by <a href="https://motsuka.com" target="_blank">Marie Otsuka</a> and <a href="https://roelof.info" target="_blank">Roel Roscam Abbing</a>, the same people who were behind the first solar design. <a href="https://verdeil.net" target="_blank">Marie Verdeil</a> assisted throughout the process and coordinated the migration of the website.</p>
+<h2 id="switching-platforms">Switching Platforms</h2>
+<p>The original solar website, <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/">launched in 2018</a>, ran on a static site generator called <a href="https://getpelican.com" target="_blank">Pelican</a>. While this remains a good choice for a relatively small website, the solar-powered version of Low-tech Magazine has grown significantly over time. Initially it featured only a selection of the English language website, but has expanded over time to contain not only more English language articles, but translations in five other languages as well. Organizing articles and publishing changes on such a large website became a cumbersome process. For example, it took more than an hour to regenerate the site on changes – even if we only added one comment.</p>
+<p><a href="https://gohugo.io" target="_blank">Hugo</a> is a static site generator written in a faster programming language. In Pelican, much of the functionality we needed for the website such as support for multiple languages and image compression came as plugins of varying quality. This lead to limitations over time. In Hugo, these features are better supported from the start as they are core to the project. As a consequence of switching to Hugo we managed to reduce the generation time on the server from over an hour to approximately twelve minutes. On a modern laptop the difference is between several minutes and several seconds of generation.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" role="doc-noteref">1</a></sup> This difference in time also means a difference in energy use on the server.</p>
+<p>Aside from faster website builds, Hugo allows for a better organisation of content and is more flexible in defining categories for displaying that content. This allowed us, for example, to create dedicated pages highlighting the different <a href="https://solar.lowtechmagazine.com/contributors/">contributors and translators</a> to the magazine. However, despite both projects using posts written in Markdown, migrating all content from Pelican to Hugo was a time-consuming task. Both because of subtle differences in the post metadata format and because our Hugo setup requires its own shortcodes to allow the display of  images, captions, and links. We converted the majority of articles from one platform to another using a custom script, but it still took another two months to iron out and manually repair inconsistencies in the content.</p>
+<h2 id="design-changes">Design changes</h2>
+<h3 id="battery-meter">Battery meter</h3>
+<p>The new platform allowed us to address two design issues that regularly came up in the feedback over the last years. The first concerns the battery meter, which reflects the battery status of our off-the-grid website configuration. Some people found that it interfered with the reading process, especially when it’s halfway the page. The battery meter remains an elementary part of our design, revealing the material infrastructure that supports the website. However, it now remains at the top of the document, and no longer moves along as one scrolls down an article to interfere with the text.</p>
+<h3 id="images">Images</h3>
+<p>The second and major design improvement concerns the images. Dithered image compression works great for many images, and even makes black and white images more attractive. However, some images become unclear. This is especially so for graphs, which can become unreadable if they are not designed with dithering in mind. For some other images, the colors convey information that is lost in the dithering process.</p>
+<p>The new design allows the visitor to turn off the dithering compression for individual images, revealing the original photo or illustration. The original images we show are compressed in a conventional way and are slightly heavier than the dithered images. Revealing them thus increases the load on our server. It remains to be seen how this will influence the energy use and uptime of the solar website.</p>
+<p>Furthermore, the images are no longer full screen, which is especially advantageous when the website is viewed on a large computer screen.</p>
+<h2 id="source-code">Source Code</h2>
+<p>As was the case with the original Pelican theme, we <a href="https://github.com/lowtechmag/solar_v2" target="_blank">release the Hugo theme as open source software</a>. The original solar web theme and plugins remain available, but are no longer updated nor maintained.</p>
+<h2 id="running-low-tech-magazine-on-1-website">Running Low-tech Magazine on 1 website</h2>
+<p>This major redesign is the penultimate step towards running Low-tech Magazine on just one (solar-powered) website. Ever since the launch of the solar powered website in 2018, the old (English language) website <a href="https://www.lowtechmagazine.com" target="_blank">has remained online and up-to-date</a>. This is troublesome, for several reasons.</p>
+<p>First, running two similar websites is not consistent with our aim to lower the ecological footprint of the publication. The more so because the original website – a dynamic website hosted on blogging platform <em>TypePad</em> – is not lightweight. A second website running on grid power also defeats the purpose of going offline when the weather is bad – the old website remains online no matter the weather. Second, the need to update two websites involves a lot of extra work that would better be dedicated to writing and researching. The layout for every article has to be made twice, on different platforms. Comments and changes to the articles also have to be updated on two platforms.</p>
+<p>The higher quality of the images was one of the main reasons to keep the old website up-to-date. Now that the original images can be viewed on the solar powered website, we will no longer update the old website. From now on, new content (including comments on older articles) only appears on the solar powered website. The <em>TypePad</em> website will remain online until summer, when we plan to move the part of the archive that has still not been converted to the static web format. It concerns mostly articles and pages from the early days.</p>
+<p>For most other languages, the switch to the solar powered website has been completed already and the original websites have been shut down. The only exception is the original Dutch language website, which is no longer updated but remains online (also hosted at <em>TypePad</em>) to keep the older articles accessible. Due to the high number of original articles on that website, it will be the last original website to disappear, if ever. It still has <a href="https://www.lowtechmagazine.be" target="_blank">the original design from 2007</a>.</p>
+<h2 id="user-friendliness">User-friendliness</h2>
+<p>The new solar design brings nothing but advantages to the readers of Low-tech Magazine. However, on the publishing side, the balance is less positive. A greater usability for the visitors has gone (partly) at the expense of a lower usability for the author. The shortcodes used by Hugo are <a href="https://github.com/lowtechmag/solar_v2#image-shortcodes" target="_blank">much clunkier</a> than the syntax used by Pelican, and that adds to the time that it takes to make the layout for an article. This partly negates the time that is won by no longer having to update the second website.</p>
+<p>Static websites are much more energy efficient than dynamic websites. However, static site generators still have a long way to go in terms of usability before they can become more mainstream and compete with tools such as WordPress. In the five years between our initial release and this one, to our surprise, no robust and user-friendly application for static site generators has appeared that could replace our current workflow. Several projects exist, but these are all dependent on proprietary cloud services. A usable graphical interface for static site generators is still where key contributions to this field can be made. In the upcoming months, we will try to improve things on the publishing side, and as always, we welcome your feedback and suggestions. Please also share bugs or inconsistencies that we have missed in the migration. Thanks to everyone who has supported this project over the years.</p>
+</div>
+<div class="post-footer">
+<ul>
+<li><a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv">Subscribe to our newsletter</a>.</li>
+<li> Support Low-tech Magazine via <a href="https://www.paypal.me/lowtechmagazine">Paypal</a> or <a href="https://www.patreon.com/lowtechmagazine">Patreon</a>.</li>
+<li><a href="https://solar.lowtechmagazine.com/offline-reading/">Read Low-tech Magazine offline</a>.</li>
+</ul>
+</div>
+</section>
+<section class="comments" id="comments">
+<h2 id="comments-title">Comments </h2>
+<p><em>To make a comment, please send an e-mail to solar (at) lowtechmagazine (dot) com. Your e-mail address is not used for other purposes, and will be deleted after the comment is published. If you don’t want your real name to be published, sign the e-mail with the name you want to appear.</em></p>
+<details>
+<summary><span id="comment-count"></span> Reactions</summary>
+<div id="comments-list">
+<div class="comment">
+<h5>Tobias</h5>
+<p>Hi Kris!</p>
+<p>I read in the article on your new Solar site that you solicited a easy-to-use graphical interface for static site generators. I am a developer and felt that it sounded like a quite interesting project. I have been using static site generators a bit for my own sites and also contributed to one (<a href="https://github.com/greghendershott/frog%29" target="_blank">https://github.com/greghendershott/frog)</a>.</p>
+<p>Having a developer background I didn’t think so much about graphical user interfaces (I usually settle for some home-grown Emacs integration), but I admit that this probably narrows the target user group for this kind of (in my opinion under-utilized) technology. So am I curious to know what kind of requirements you had in mind for such a graphical interface? Something that is tool agnostic, i.e. you could call out to any [supported] static site generator? Desktop app? Should it feature a page authoring component? (Markdown or such) Interested to hear any thoughts you have about this.</p>
+<p>Thanks a bunch for the magazine. I enjoy the articles a lot, and dare I say they also strike a deeper chord in me (probably because I think that the information that is conveyed is actually very valuable, and will probably become only more so in the future). I had an idea myself for an article a while back actually, is it possible to contribute articles?</p>
+<p>Warm regards,</p>
+<p>Tobias</p>
+</div>
+<div class="comment">
+<h5>Jonas</h5>
+<p>Which user-friendly application for static website generation would you like? Do you have a requirments/whishes list?</p>
+</div>
+<div class="comment">
+<h5>Marie Verdeil</h5>
+<p>Hi @Tobias &amp; @Jonas!</p>
+<p>I am Marie Verdeil, and I assisted the rebuild both as a designer and  web-developer.
+I am glad to see some developers picking up the topic of a static-site generator GUI and would love to bounce some ideas with you. Currently, we use Hugo and a self-hosted server administarted by @Roel Roscam Abbing (more detais <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/" target="_blank">here</a>) that pulls from a Gitlab repository.</p>
+<p>While there exists some static-site generator CMS like <a href="https://decapcms.org/" target="_blank">Netlify CMS</a> (now called Decap) and <a href="https://www.staticcms.org/" target="_blank">Static CMS</a> and even Hugo desktop apps (like <a href="https://buhocms.org/" target="_blank">Buho CMS</a>), none of them seem to match our requirments</p>
+<ul>
+<li>Static CMS and Decap CMS require a Netlify deploy (AWS server), which doesn’t really fit our low energy philospohy and also isn’t self-hosted. Note that a CMS probably couldn’t run on the server, since it’s so lightweight and has limited computer power.*</li>
+<li>Buho CMS isn’t compatible on Mac and still in alpha (not tested yet)</li>
+<li>Other CMS have (quite high) monthly fees and are also cloud based</li>
+</ul>
+<p>Currently the biggest problem lies with writing markdown. Since we don’t have a user-interface, all writers and translators write markdown locally or on gitlab. This is both uncomfortable and prone to many errors (wrong metadata, wrong spelling for tags or categories, wrong shortcode syntax, incorrect internal links leading to 404 errors, etc.).
+Another issue lies with the lack of preview, for people (not familiar with the terminal and therefore unable to run a local server). The current setup is that I preview articles locally, make a screenshot and send it back to Kris…</p>
+<p>My current GUI / wishlist would be:</p>
+<ul>
+<li>enables previewing articles</li>
+<li>either local (must support linux, macos and windows?) or self-hosted</li>
+<li>light-weight</li>
+<li>comes with a markdown and YAML editor that prevents syntax errors (maybe with the ability to create widgets expecting specific format or with drop-down menus)</li>
+<li>supports shortcodes</li>
+<li>supports multi-lingual mode (i18n)</li>
+<li>free and open-source</li>
+</ul>
+<p>*We are maybe missing some other tools and haven’t started testing any of these on this project, so feedback on your favorite CMS is welcome.</p>
+</div>
+<div class="comment">
+<h5>Mark Schultz</h5>
+<p>I am in the process of developing a global static site for community groups. Similar problems include i18n (for new language sourcing and translations of existing pages into new languages), and the “power user” requirement for markdown content.</p>
+<p>Our current Buddhist practice community website (<a href="https://fallingrain.org/en/" target="_blank">https://fallingrain.org/en/</a>) is a gitlab-to-netlify build. All free, but not solar (yet :). VS Code for website management and GIMP for image work.</p>
+<p>Thanks for posting the CMS that you have already reviewed. Might be a nice option for some of my work. However, I am thinking that a lightweight API and some javascript would allow in-place translation. Poepole granted editor access could simply modify navigation/front-end phrases, or use a JS editor for larger posts; these would be stored in a temporary “updates” table. We would have a build team pull in those translations using a little build utility – it would populate the local JSON or whatever language files and even generate the .md for posts. Since I will know exactly where “update” came from, I can target my build utility to create a backup, and then write to the correct files…</p>
+<p>I considered having those tables be the source for all i18n detail… but  then you have to have that darned API listening and answering all the time… good-bye solar site, hello weight of services again. So if the API is called once for authorization (authentication would be OAuth2 or some such? if I can get it free-ish?), that would be reasonably light on our poor little planet…</p>
+<p>Visual Studio Code is really a pretty fine platform. I assume you use this or similar already…. If not, extensions provide markdown previews and syntax, as well as .YMAL or .TOML or all the other flavors of everything you need. I also created very simple command line actions to create new posts, creating the front matter for me – I might change some of the details for a given post or page. This really reduces the problems remembering what should be where.</p>
+<p>“hugo serve” allows local preview and real time changes.</p>
+<p>VSCode is a developer IDE, but packaging the extensions you use and the few helper commands can go a long way to lessening the tech shock. If you have questions about what I have done these past several years, I’m happy to get on some flavor of media call. I live in Catalunya as well, north of Barcelona (Sant Feliu de Pallerols, La Garrotxa).</p>
+<p>Thanks for your geeky inspiring work!</p>
+<p>Mark Schultz</p>
+</div>
+<div class="comment">
+<h5>Mark Schultz</h5>
+<p>You could use the same lightweight API structure for receiving comments in-line. You would probably add a CAPTCHA interface to avoid getting spammed, and require some sort of email address or other identification to be allowed to post. The service could also grab the IP address of the poster, and allow only a few uploads per day, or something like that…</p>
+<p>The API would save comments in a temporary table, which would then be pulled down and added to your Hugo folders during the build process. I do all my personal work in Linux, while my work-for-pay is Windows, so I could develop that pull utility in a Windows desktop application. This two-step process means that changes to the website are not real-time – which I am happy about, actually; this isn’t social media – and involve someone pushing a button.</p>
+<p>Question:</p>
+<p>We were refugees from BCN, moving to our fix-up home one day before the Covid lockdown. We had no electricity (due to an electrician who was a Covid Denier, and wouldn’t listen to me), so I did my development work with a tethered cellphone, a solar panel, and a 166Wh Beaudens battery. Amazing. I kept up my consulting business from a 200AD mill, heated with a little french wood burning stove. Still using the tethered phone for all my internet needs.</p>
+<p>The real question: I still have this panel and the battery, and am considering playing with a solar site myself. Would you still recommend the same OLinuXino? Have you learned any tricks since your original hardware posting?</p>
+<p>Thanks!</p>
+<p>Mark Schultz</p>
+</div>
+<div class="comment">
+<h5>Florimond</h5>
+<p>Hi,</p>
+<p>I work at a worker-owned business named Fairness <a href="https://fairness.coop" target="_blank">0</a>. We use Hugo for
+our public site and blog. I personally share some of the usability
+concerns about Hugo that you mention at the end of the post. So the idea
+of improving the usability resonated with me.</p>
+<p>I’d have a few more questions to help clarify what direction would best
+fit a community effort towards a free and open source “Hugo GUI” (or
+other non-technical-user-friendly interface for Hugo).</p>
+<ul>
+<li>Live preview: other commenters have mentioned the ‘hugo server’
+command. I also noted Pelican also has live preview through the command
+line: ‘pelican –listen’. I suppose the real issue is live preview
+specifically for non-technical people, right?</li>
+<li>i18n support: the Hugo docs link to go-i18n <a href="https://github.com/nicksnyder/go-i18n" target="_blank">1</a>, which seems to
+require knowledge of both Go and the particular translation file format
+the package uses. Would providing a standard, well-known format like
+Mozilla Fluent <a href="https://projectfluent.org/" target="_blank">2</a> in a transparent way be better?</li>
+<li>Web vs Desktop: in her comment, Marie writes “GUI”. I’m curious if
+there’s a preference for Desktop GUI vs Web-based GUI (Web app).
+Assuming development capacity is reduced, and Electron-based desktop
+GUIs are a no-go, I’d assume a Web-based GUI would be the priority?</li>
+<li>Free and open source model: some ideas about this – one model I see
+increasingly is a FOSS, self-hostable solution, with a freemium managed
+public instance. This seems to strike a balance between the freedom and
+control of FOSS, and providing an income stream to sustain the project.
+I’m thinking of Grist <a href="https://getgrist.com" target="_blank">3</a> as an example. Given the institutional and
+corporate usage of Hugo, funding through subsidies or paid instance
+usage might actually work. Overall, I agree that a self-hostable
+solution would be beneficial to the community at large.</li>
+<li>How do you handle images? This community topic from 2017 <a href="https://discourse.gohugo.io/t/desktop-cms-gui-app-for-hugo/6614" target="_blank">4</a> raises
+many questions like yours. One user (alexandros) mentions usability
+issues when handling lots of images in a given page of content (“10-30
+images”). Of course, from an ecodesign perspective, the priority would
+be to question the need for that many images. But then, do you expect
+any functionality from the static site generator with respect to
+storing, linking, or optimizing images?</li>
+<li>Have you looked at <strong>Hokus</strong> <a href="https://github.com/julianoappelklein/hokus" target="_blank">5</a>, and if so what did you think about
+it? It seems to tick the FOSS and user-friendliness boxes. Looks
+unmaintained since 2020, though. Could that be a possible working base?</li>
+<li>Do you have any issues or ideas with respect to <strong>collaboration</strong>? You
+mention how “writing Markdown locally or on Gitlab” is problematic. Does
+that mean you’d expect a GUI to enable live collaboration through a
+shared application which abstracts git away? In other words, is git
+usage a problem or do you find non-technical users get used to the
+workflow (e.g. through the Gitlab UI)? If the problem is more with
+writing Markdown in general, perhaps some validation functionality
+(syntax correctness, internal link validation, and so on) could be
+another piece to improve the situation?</li>
+</ul>
+<p>Thanks a lot for your inspiring piece and the ongoing work with the Low
+Tech Magazine. Looking forward to reading you back. For what it’s worth,
+I am probably going to submit the problem of “usable Hugo GUI” as a
+discussion topic at Fairness. Perhaps we’ll be interested in
+collaborating with you or other interested folks (such as fellow
+commenters!) on a solution that moves the ecosystem forward. Happy to
+discuss!</p>
+<p>Best,</p>
+<p>Florimond</p>
+</div>
+<div class="comment">
+<h5>Amadeus</h5>
+<p>Hi there!</p>
+<p>I got pointed towards your article on Mastodon and enjoyed reading it. Congratulations on the re-launch!</p>
+<p>I’m the developer of Mattrbld (<a href="https://mattrbld.com" target="_blank">https://mattrbld.com</a>) a headless CMS built specifically for statically generated sites (it is itself a statically generated app). It functions similar to other Git-based headless content management systems, but it runs entirely as a PWA in a browser and only needs a connection when synching changes to and from the Git repository. It is also focussed on providing an easy and intuitive interface (including previews!) for content editors, while allowing a high degree of control and customisation regarding the underlying data structures.</p>
+<p>As you can imagine, building such a tool is a challenge and there is still a lot to do, but it’s already being used on some production websites. I am not sure if it is a great fit for your project, but perhaps you could take a look and decide for yourselves. Since other users here in the comments have expressed interest in such a system, I figured I’d let all of you know.</p>
+<p>Maybe it could even run on a solar-powered webserver one day, since all the heavy lifting happens on the user’s device anyway.</p>
+<p>I am working towards open-sourcing it so users can contribute and have peace of mind, but as I’m still cleaning things up for the initial release, you can also try it out for free at <a href="https://app.mattrbld.com" target="_blank">https://app.mattrbld.com</a>.</p>
+<p>Keep up the great work!</p>
+<p>Cheers,
+Amadeus</p>
+</div>
+<div class="comment">
+<h5>Anonymous</h5>
+<p>What’s missing on every article page in my opinion is the date of
+publication. The only way to know it is to look at the url.</p>
+<p>Anonymous</p>
+</div>
+</div>
+</details>
+</section>
+<section id="reference">
+<div class="footnotes" role="doc-endnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>To understand the difference, we ran both the Hugo and the Pelican site generators in an experiment. The Pelican build is based on the <a href="https://github.com/lowtechmag/solar" target="_blank">solar theme</a> and <a href="https://github.com/lowtechmag/solar-plugins" target="_blank">plugins</a>. The Hugo build is based on the <a href="https://github.com/lowtechmag/solar_v2" target="_blank">solar_v2</a> theme and dithering and file size calculation scripts as defined in <a href="https://github.com/lowtechmag/solar_v2/blob/main/utils/build_site.sh" target="_blank">the build script</a>. Both sites have 447 articles across various languages and more than 1500 images. The results of the experiment are visible in the table below. The first two rows show how long it takes to build the site on first run. During the first run, all assets need to be generated and images need to be compressed, which takes longer than subsequent runs where the assets are cached. The last two rows show generation times when assets are already cached. The times displayed are the average time of three runs on both the solar server (an A20 processor with two 1 GHz cores and 1 GB of RAM) and a modern laptop (an Intel i7-8650U Processor with four cores at 1.9 GHz and 32 GB of RAM). Generating the Hugo site on the solar server without cached assets is not possible to do in one go because the process either runs out of memory or exceeds the timeout limit of Hugo. In that case, the command has to be run several times in a row. While it seems as if Hugo is slower than Pelican on the laptop, that is likely explained by the Hugo site running <em>both</em> a dithering logic and another compression logic for the images. In Pelican, images are only dithered and originals not recompressed.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Hugo</strong></th>
+<th><strong>Pelican</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solar Server (first run)</td>
+<td>-</td>
+<td>100 minutes, 47 seconds</td>
+</tr>
+<tr>
+<td>Modern Laptop (first run)</td>
+<td>13 minutes, 31 seconds</td>
+<td>12 minutes, 53 seconds</td>
+</tr>
+<tr>
+<td>Solar Server (cached)</td>
+<td>11 minutes, 57 seconds</td>
+<td>68 minutes, 47 seconds</td>
+</tr>
+<tr>
+<td>Modern Laptop (cached)</td>
+<td>46 seconds</td>
+<td>04 minutes, 57 seconds</td>
+</tr>
+</tbody>
+</table>
+ <a class="footnote-backref" href="#fnref:1" role="doc-backlink">↩︎</a></li>
+</ol>
+</div>
+</section>
+<section class="article-list" id="related">
+<h3 class="related">Related Articles</h3>
+<div class="post-info gray">
+<p class="tags">Themes:
+		        
+		            <a class="tag" href="https://solar.lowtechmagazine.com/tags/ict/">ICT</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/solar-powered-website/">Solar Powered Website</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/internet/">Internet</a>
+<a class="tag" href="https://solar.lowtechmagazine.com/tags/computer-software/">Computer Software</a>
+</p>
+</div>
+<div class="grid">
+<div class="article high-tech-problems">
+<a href="https://solar.lowtechmagazine.com/2023/08/thematic-books-series/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2023/08/thematic-books-series/images/dithers/coverthumbnailsmall-3_dithered.png');"></div>
+<h3 class="entry-title">Thematic Book Series: How to Build a Low-tech Internet?</h3>
+<p class="index-summary">We have launched the first volume in a new series of books opening up Low-tech Magazine’s archive by theme.</p>
+<time class="published">August 18, 2023</time>
+</a>
+</div>
+<div class="article low-tech-solutions">
+<a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/images/dithers/sps_close_dithered.png');"></div>
+<h3 class="entry-title">How to Build a Low-tech Website?</h3>
+<p class="index-summary">Our new website is designed to radically reduce the energy use associated with accessing our content.</p>
+<time class="published">September 24, 2018</time>
+</a>
+</div>
+<div class="article high-tech-problems">
+<a href="https://solar.lowtechmagazine.com/2017/02/rebooting-energy-demand-automatic-software-upgrades/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2017/02/rebooting-energy-demand-automatic-software-upgrades/images/dithers/nickkie-retro-computers-windows-software_dithered.png');"></div>
+<h3 class="entry-title">Rebooting Energy Demand: Automatic Software Upgrades</h3>
+<p class="index-summary">More and more consumer products are controlled by networked software: what does this mean for energy demand, and exactly who is responsible for increasing consumption?</p>
+<time class="published">February 20, 2017</time>
+</a>
+</div>
+<div class="article high-tech-problems">
+<a href="https://solar.lowtechmagazine.com/2016/11/the-curse-of-the-modern-office/">
+<div class="featured-img" style="background-image: url('https://solar.lowtechmagazine.com/2016/11/the-curse-of-the-modern-office/images/dithers/fantasy-skyline_dithered.png');"></div>
+<h3 class="entry-title">The Curse of the Modern Office</h3>
+<p class="index-summary">The information society promises to dematerialise society and make it more sustainable, but modern office and knowledge work has itself become a large and rapidly growing consumer of energy and other resources</p>
+<time class="published">November 22, 2016</time>
+</a>
+</div>
+</div>
+</section>
+</article>
+</main>
+<footer class="site-footer">
+<div id="page-size">236.28KB</div>
+<div id="back-to-top"><a href="#top" id="" title="Back to top"> ↑ </a></div>
+<h2>
+<a href="https://solar.lowtechmagazine.com/">LOW←TECH MAGAZINE</a>
+</h2>
+<div class="dashboard">
+<ul class="grid">
+<li>
+<h3>Server Stats</h3>
+<dl id="stats">
+</dl>
+</li>
+<li>
+<h3>Forecast</h3>
+<div class="forecast"></div>
+</li>
+<li>
+<h3>Info</h3>
+<div class="footer-links">
+<a href="https://solar.lowtechmagazine.com/about">
+  About
+</a>
+<a href="https://solar.lowtechmagazine.com/power">
+  Power
+</a>
+<a href="https://solar.lowtechmagazine.com/about/team">
+  Colophon
+</a>
+<a href="https://solar.lowtechmagazine.com/donate">
+  Donate
+</a>
+<a href="/privacy">
+  Privacy Policy
+</a>
+</div>
+</li>
+<li>
+<h3>Contact</h3>
+<p>
+                    © Kris De Decker<br/> solar [at] lowtechmagazine [dot] com</p>
+<div class="social">
+<a href="/feeds" rel="alternate" target="_blank" type="application/atom+xml"><svg class="icon" viewbox="0 0 80 80"><title>RSS Feed</title><circle cx="19.91" cy="58.23" r="6.86"></circle><path d="M67.89,65.72H55.7A41.86,41.86,0,0,0,13.89,23.91V11.73A54.06,54.06,0,0,1,67.89,65.72Z"></path><path d="M48.93,65.72H36.75A22.88,22.88,0,0,0,13.89,42.87V30.68A35.08,35.08,0,0,1,48.93,65.72Z"></path></svg></a>
+<a href="https://twitter.com/lowtechmagazine" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Twitter</title><path d="M65.05,29.23c0,.56,0,1.12,0,1.68,0,17.1-13,36.8-36.8,36.8A36.54,36.54,0,0,1,8.44,61.91a26.68,26.68,0,0,0,3.12.16,25.9,25.9,0,0,0,16.06-5.53,13,13,0,0,1-12.09-9,16.28,16.28,0,0,0,2.44.2,13.67,13.67,0,0,0,3.4-.44A12.93,12.93,0,0,1,11,34.64v-.16a13,13,0,0,0,5.85,1.64,13,13,0,0,1-4-17.3A36.76,36.76,0,0,0,39.51,32.36a14.58,14.58,0,0,1-.32-3,12.95,12.95,0,0,1,22.38-8.85,25.45,25.45,0,0,0,8.21-3.12,12.9,12.9,0,0,1-5.69,7.13,25.93,25.93,0,0,0,7.45-2A27.79,27.79,0,0,1,65.05,29.23Z"></path></svg></a>
+<a href="https://www.patreon.com/lowtechmagazine" target="_blank"><svg class="icon" preserveaspectratio="xMidYMid" transform="scale(0.85)" viewbox="0 -4.5 256 256"><title>Patreon</title><path d="M45.1355837,0 L45.1355837,246.35001 L0,246.35001 L0,0 L45.1355837,0 Z M163.657111,0 C214.65668,0 256,41.3433196 256,92.3428889 C256,143.342458 214.65668,184.685778 163.657111,184.685778 C112.657542,184.685778 71.3142222,143.342458 71.3142222,92.3428889 C71.3142222,41.3433196 112.657542,0 163.657111,0 Z"> </path></svg></a>
+<a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Newsletter</title><path d="M4.95,13.14v55H74.33v-55Zm54.34,8.12L39.64,39.74,20,21.26ZM13.07,60V25.91l26.56,25,26.57-25V60Z"></path></svg></a>
+</div>
+</li>
+</ul>
+</div>
+</footer>
+<script src="https://solar.lowtechmagazine.com/js/script.js"></script>
+</body>
+</html>

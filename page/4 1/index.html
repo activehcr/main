@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta content="Hugo 0.104.3" name="generator"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>LOW←TECH MAGAZINE</title>
+<meta content="This is a solar-powered website, which means it sometimes goes offline" name="description"/>
+<meta content="Kris De Decker" name="author"/>
+<link href="https://solar.lowtechmagazine.com/icons/sun.svg" rel="icon"/>
+<link href="https://solar.lowtechmagazine.com/css/style.css" rel="stylesheet"/><link href="https://solar.lowtechmagazine.com/index.xml" rel="alternate" title="LOW←TECH MAGAZINE" type="application/rss+xml">
+<meta content="LOW←TECH MAGAZINE" property="og:title">
+<meta content="LOW←TECH MAGAZINE" name="twitter:title">
+<meta content="This is a solar-powered website, which means it sometimes goes offline" property="og:description">
+<meta content="This is a solar-powered website, which means it sometimes goes offline" name="twitter:description">
+<meta content="website" property="og:type">
+<meta content="https://solar.lowtechmagazine.com/" property="og:url"/>
+<meta content="https://solar.lowtechmagazine.com/icons/sun.svg" property="og:image"/>
+<meta content="https://solar.lowtechmagazine.com/icons/sun.svg" property="og:image:secure_url"/>
+<meta content="image/svg+xml" property="og:image:type"/>
+<meta content="300" property="og:image:width">
+<meta content="300" property="og:image:height"/>
+<meta content="summary" name="twitter:card"/><meta content="LOW←TECH MAGAZINE" property="og:site_name"/>
+</meta></meta></meta></meta></meta></meta></link>
+
+ <style>
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+</style>
+</head>
+
+
+<body id="">
+<div class="battery_bg">
+<div class="bat_status" data-charging="no" id="battery_data">
+<a href="https://solar.lowtechmagazine.com/power/" title="Power">
+<span id="charge_icon">
+<svg class="icon battery-svg" viewbox="0 0 500 500"><title>Battery used</title><polygon class="svg_stroke" points="327.01 127.16 327.01 47.31 172.99 47.31 172.99 127.16 115.52 127.16 115.52 452.69 384.48 452.69 384.48 127.16 327.01 127.16"></polygon><polygon class="svg_fill" points="357.64 408.86 158.26 408.86 158.26 209.49 357.64 408.86"></polygon></svg>
+<svg class="icon sun-svg" viewbox="0 0 500 500"><title>Battery charging</title><circle class="svg_fill" cx="248.48" cy="252.55" r="97.03"></circle><rect class="svg_fill" height="112.39" width="27.9" x="234.53" y="17.45"></rect><rect class="svg_fill" height="112.39" width="27.9" x="234.53" y="375.25"></rect><rect class="svg_fill" height="112.39" transform="translate(679.92 -174.83) rotate(90)" width="27.9" x="413.42" y="196.35"></rect><rect class="svg_fill" height="112.39" transform="translate(322.12 182.97) rotate(90)" width="27.9" x="55.63" y="196.35"></rect><rect class="svg_fill" height="112.39" transform="translate(198.96 -228.23) rotate(45)" width="27.9" x="361.03" y="69.85"></rect><rect class="svg_fill" height="112.39" transform="translate(303.75 24.77) rotate(45)" width="27.9" x="108.03" y="322.85"></rect><rect class="svg_fill" height="112.39" transform="translate(908.15 381.93) rotate(135)" width="27.9" x="361.03" y="322.85"></rect><rect class="svg_fill" height="112.39" transform="translate(297.35 128.93) rotate(135)" width="27.9" x="108.03" y="69.85"></rect></svg>
+</span>
+<span id="level"></span></a>
+</div>
+<div id="battery">
+</div>
+</div>
+
+
+<header class="site-header">
+<h1><a href="/" id="top">42WEB←BRUTAL</a></h1>
+<div class="subtitle">
+<a href="https://42web.eu.org/solar">This is a Static-website but some sources still solar-powered which means it sometimes goes offline</a>
+</div>
+<nav id="menu">
+<div id="menu-s">
+<div id="lang-menu" title="languages">
+<svg class="icon" id="globe" viewbox="0 0 19.97 19.97" xmlns="http://www.w3.org/2000/svg"><circle class="stroke" cx="9.99" cy="9.99" r="9.24"></circle><ellipse class="stroke" cx="9.99" cy="9.99" rx="4.63" ry="9.24"></ellipse><line class="stroke" x1="9.99" x2="9.99" y1="0.75" y2="19.22"></line><line class="stroke" x1="18.39" x2="1.58" y1="12.99" y2="12.99"></line><line class="stroke" x1="18.39" x2="1.58" y1="6.99" y2="6.99"></line></svg>
+</div>
+<nav id="languages">
+<ul>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/">English</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/fr/">Français</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/de/">Deutsch</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/nl/">Nederlands</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/es/">Español</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/it/">Italiano</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/pt/">Português</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/pl/">Polski</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/ar/">العربية</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/vn/">Tiếng Việt</a>
+</li>
+<li>
+<a class="lang-option" href="https://solar.lowtechmagazine.com/ko/">한국어</a>
+</li>
+</ul>
+</nav>
+<span id="m-btn">menu</span>
+</div>
+<ul id="menu-list">
+<li class="">
+<a data-nav="about" href=" /about/ ">
+<span>About</span>
+</a>
+</li>
+<li class="">
+<a data-nav="low-tech-solutions" href=" /low-tech-solutions/ ">
+<span>Low-tech Solutions</span>
+</a>
+</li>
+<li class="">
+<a data-nav="high-tech-problems" href=" /high-tech-problems/ ">
+<span>High-tech Problems</span>
+</a>
+</li>
+<li class="">
+<a data-nav="obsolete-technology" href=" /obsolete-technology/ ">
+<span>Obsolete Technology</span>
+</a>
+</li>
+<li class="">
+<a data-nav="offline-reading" href=" /offline-reading/ ">
+<span>Offline Reading</span>
+</a>
+</li>
+<li class="">
+<a data-nav="archive" href=" /archives/ ">
+<span>Archive</span>
+</a>
+</li>
+<li class="">
+<a data-nav="donate" href=" /donate/ ">
+<span>Donate</span>
+</a>
+</li>
+<li class="">
+<a data-nav="ntm" href=" https://www.notechmagazine.com/ " target="_blank">
+<span>NTM</span>
+</a>
+</li>
+<li class="rss">
+<a href="https://d69baa34.sibforms.com/serve/MUIEAJWIw9w82Dl4ua6FQArPaI-3Qb-zVTwPNabHQgFH51MiGF69Smy9LOC_HPoUmBj0emaXsXT87gcQXDPvtu-AZsJCHWhkkv21CdrcQu4GdnYAhZ-MrIPhwGDecagLzYxqfvkaqXg2ODcbJU4ByoDmzJK3ZTczDo2jcWtfn-En0MGKLVkgxx9TgdHqYoPabMJCMF-agLEclEwv" target="_blank"><svg class="icon" viewbox="0 0 80 80"><title>Newsletter</title><path d="M4.95,13.14v55H74.33v-55Zm54.34,8.12L39.64,39.74,20,21.26ZM13.07,60V25.91l26.56,25,26.57-25V60Z"></path></svg></a>
+<a href="/feeds" rel="alternate" target="_blank" type="application/atom+xml"><svg class="icon" viewbox="0 0 80 80"><title>RSS Feed</title><circle cx="19.91" cy="58.23" r="6.86"></circle><path d="M67.89,65.72H55.7A41.86,41.86,0,0,0,13.89,23.91V11.73A54.06,54.06,0,0,1,67.89,65.72Z"></path><path d="M48.93,65.72H36.75A22.88,22.88,0,0,0,13.89,42.87V30.68A35.08,35.08,0,0,1,48.93,65.72Z"></path></svg></a>
+</li>
+</ul>
+</nav>
+</header>
+
+
+<main class="home article-list">
+<section class="grid" id="home-listing">
+<div class="article high-tech-problems">
+<a href="content/1">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="content/">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+<div class="article high-tech-problems">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article obsolete-technology">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article obsolete-technology">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article obsolete-technology">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+
+<div class="article low-tech-solutions">
+<a href="url">
+<div class="featured-img" style="background-image: url('/noimg.jpg');"></div>
+<h3 class="entry-title">Title</h3>
+<p class="index-summary">Summary</p>
+<time class="published">July 8, 2023</time>
+</a>
+</div>
+</section>
+
+<nav class="pagination">
+     <a href="/">1</a>
+     <a href="/page/2/">2</a>
+     <a href="/page/3/">3</a>
+     <a href="/page/4/" class="active">4</a>
+     <a href="/page/5/">5</a>
+     <a href="/page/6/">6</a>
+     <a href="/page/7/">7</a>
+     <a href="/page/8/">8</a>
+</nav>
+<br>
+
+</main>
+
+<footer class="site-footer">
+<div id="page-size">537.14KB</div>
+<div id="back-to-top"><a href="#top" id="" title="Back to top"> ↑ </a></div>
+<h2>
+<a href="/">42WEB←BRUTAL</a>
+</h2>
+<div class="dashboard">
+<ul class="grid">
+<li>
+<h3>Server Stats</h3>
+<dl id="stats">
+</dl>
+</li>
+<li>
+<h3>Forecast</h3>
+<div class="forecast"></div>
+</li>
+<li>
+<h3>Info</h3>
+<div class="footer-links">
+<a href="https://solar.lowtechmagazine.com/about">
+  About
+</a>
+<a href="https://solar.lowtechmagazine.com/power">
+  Power
+</a>
+<a href="https://solar.lowtechmagazine.com/about/team">
+  Colophon
+</a>
+<a href="https://solar.lowtechmagazine.com/donate">
+  Donate
+</a>
+<a href="/privacy">
+  Privacy Policy
+</a>
+</div>
+</li>
+<li>
+<h3>Contact</h3>
+<p>
+                    © Kris De Decker<br/> solar [at] lowtechmagazine [dot] com</p>
+<div class="social">
+</div>
+</li>
+</ul>
+</div>
+</footer>
+<script src="https://solar.lowtechmagazine.com/js/script.js"></script>
+</body>
+</html>
